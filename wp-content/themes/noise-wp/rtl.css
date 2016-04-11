@@ -1,0 +1,1037 @@
+/*
+Theme Name: NOISE
+Theme URI: http://themes.fitwp.com/noise
+Author: FitWP
+Author URI: http://fitwp.com
+Description: Premium Onepage Dj & Band Theme. Adding support for language written in a Right To Left (RTL) direction.
+Version: 2.3
+License: GNU General Public License v2+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: green, dark, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, featured-images, post-formats, theme-options, translation-ready
+*/
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+.left {
+  float: right;
+}
+.right {
+  float: left;
+}
+q,
+blockquote {
+  border-right: 4px solid #495745;
+  border-left: 0;
+  padding: 0 40px 0 0;
+}
+/* Grid 1170 - 12 Column
+-----------------------------------------------*/
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9,
+.col10,
+.col11,
+.col12 {
+  *display: inline;
+  display: inline-block;
+  zoom: 1;
+  float: right;
+  margin-right: 30px;
+  margin-left: 0;
+}
+.col1.first,
+.col2.first,
+.col3.first,
+.col4.first,
+.col5.first,
+.col6.first,
+.col7.first,
+.col8.first,
+.col9.first,
+.col10.first,
+.col11.first,
+.col12.first,
+.col1:first-child,
+.col2:first-child,
+.col3:first-child,
+.col4:first-child,
+.col5:first-child,
+.col6:first-child,
+.col7:first-child,
+.col8:first-child,
+.col9:first-child,
+.col10:first-child,
+.col11:first-child,
+.col12:first-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+/* Tabs
+-------------------------------------------------*/
+.tabs.vertical-tabs .tabs-nav {
+  right: -165px;
+  left: auto;
+}
+.tabs.simple-tabs .tabs-nav {
+  left: 0;
+  right: auto;
+}
+.social-likes .social-likes__widget {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.social-likes .social-likes__button {
+  float: right;
+}
+.search-form input[type="submit"] {
+  left: 10px;
+  right: auto;
+}
+.search-form i {
+  left: 20px;
+  right: auto;
+}
+.alignnone {
+  margin: 5px 0 20px 20px;
+}
+.alignright {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+.alignleft {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+img.alignright {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+img.alignnone {
+  margin: 5px 0 20px 20px;
+}
+img.alignleft {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+/*
+Colorbox Core Style:
+The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox,
+#cboxOverlay,
+#cboxWrapper,
+#cboxLoadingOverlay,
+#cboxLoadingGraphic {
+  right: 0;
+  left: auto;
+}
+#cboxMiddleLeft,
+#cboxBottomLeft {
+  clear: right;
+}
+#cboxClose {
+  left: -40px;
+  right: auto;
+}
+.section-title .desc {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.artists-slider .artist {
+  float: left;
+  margin-left: 30px;
+  width: 370px;
+  *display: inline;
+  display: inline-block;
+  zoom: 1;
+  margin-right: 30px;
+  margin-left: 0;
+  float: right;
+}
+.artists-slider .artist.first,
+.artists-slider .artist:first-child {
+  margin-left: 0;
+}
+.artists-slider .artist.first,
+.artists-slider .artist:first-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+.artists-slider .artist .artist-thumbnail {
+  float: right;
+}
+.artists-slider .artist .view-artist {
+  right: 50%;
+  left: auto;
+  margin-right: -25px;
+  margin-left: 0;
+}
+.artists-slider .artist .artist-info {
+  float: right;
+  margin-right: 30px;
+  margin-left: 0;
+}
+.artists-slider .artist .synopsis {
+  border-bottom: none;
+}
+.artists-slider .artist .quick-facts span span {
+  padding-right: 15px;
+  padding-left: 0;
+}
+.artists-slider .view-artist-gallery {
+  right: -40px;
+  left: auto;
+}
+.artists-slider .hide-detail {
+  left: -39px;
+  right: auto;
+}
+.artists-slider .artist-direction-bar {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  left: 0;
+  right: auto;
+}
+.artists-slider .artist-direction-nav {
+  right: auto;
+  left: 0;
+}
+.artists-slider .artist-direction-nav a.artist-prev {
+  border-left: 2px solid #ffffff;
+  border-right: 0;
+}
+.artists-slider .flex-direction-nav {
+  left: -39px;
+  right: auto;
+}
+.artists-slider.item-expanded .active {
+  margin-right: 0;
+  margin-left: auto;
+}
+.artists-slider.item-expanded .active .artist-info {
+  display: block;
+}
+.artists-slider.item-expanded .hidden {
+  margin-right: 0;
+  margin-left: auto;
+}
+.section-connect .social a {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.section-connect .social span {
+  float: right;
+}
+.section-connect .social .title {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  transition: width 0.5s;
+  text-transform: uppercase;
+  width: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.section-connect .toggle-contact-form {
+  right: 50%;
+  left: auto;
+  margin-right: -20px;
+  margin-left: 0;
+}
+.section-connect .toggle-contact-form h3 {
+  text-align: right;
+}
+.section-connect .toggle-contact-form .contact-info {
+  text-align: right;
+}
+.section-connect .contact-info-window {
+  text-align: right;
+}
+.section-countdown #countdown-video-bg,
+.section-countdown #countdown-youtube-bg {
+  right: 0;
+  left: auto;
+}
+.countdown-labels span {
+  margin-right: 7px;
+  margin-left: 0;
+}
+.countdown-labels span:first-child {
+  margin-right: 0;
+}
+.section-events .vertical-slider .flex-direction-nav {
+  left: -50px;
+  right: auto;
+}
+.section-events .day-event {
+  border-left: 2px solid;
+  border-right: 0;
+}
+.section-events .group-status {
+  float: left;
+}
+.section-events .status {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.section-events .day-event,
+.section-events .time-event,
+.section-events .place-event,
+.section-events .name-event,
+.section-events .infor-event,
+.section-events .status,
+.section-events .event-gallery,
+.section-events .event-videos {
+  float: right;
+}
+.section-events .content-infor-event .close-infor {
+  right: auto;
+  left: 0;
+}
+.section-events .content-infor-event .show-infor-event {
+  padding: 0 70px 0 50px;
+}
+.section-events .event-gallery,
+.section-events .event-videos {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.section-latest-news article {
+  float: right;
+  margin-right: 30px;
+  margin-left: 0;
+}
+.section-latest-news article:first-child {
+  margin-right: 0;
+}
+.section-latest-news article .entry-info .entry-format {
+  right: 20px;
+  left: auto;
+}
+.section-latest-news article .entry-info .entry-date {
+  right: 60px;
+  left: auto;
+}
+.section-latest-news article .more-link {
+  padding-right: 20px;
+  float: left;
+}
+.section-like .middle-area {
+  *display: inline;
+  display: inline-block;
+  zoom: 1;
+  margin: 0 -4px 0 -3px;
+}
+.media-slider .hentry {
+  margin: 0 30px 30px 0;
+  float: right;
+}
+.media-slider .hentry:first-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+.media-slider .play-track,
+.media-slider .view-media {
+  right: 50%;
+  left: auto;
+  margin-right: -20px;
+  margin-left: 0;
+}
+.video-player .flex-direction-nav .flex-next {
+  left: 10px;
+  right: auto;
+}
+.video-player .flex-direction-nav .flex-prev {
+  right: 10px;
+  left: auto;
+}
+.images-gallery-paginate {
+  float: left;
+  text-align: left;
+}
+.nav-menu .menu {
+  float: left;
+}
+.nav-menu .menu li ul {
+  right: -15px;
+  left: auto;
+}
+.nav-menu .menu li ul ul {
+  right: 190px;
+  left: auto;
+}
+.nav-menu .menu li.thin-menu-item ul {
+  right: auto;
+  left: 0;
+}
+.nav-menu .menu li.thin-menu-item ul ul {
+  right: auto;
+  left: 190px;
+}
+.nav-menu .menu ul .thin-menu-item ul {
+  left: 190px;
+  right: auto;
+}
+.nav-menu .mobile-nav {
+  float: left;
+}
+.nav-menu .mobile-nav i {
+  left: 0;
+  right: auto;
+}
+.nav-menu select {
+  padding: 5px 0 5px 35px;
+}
+.section-opener .unlocker .bg,
+.section-opener .unlocker .unlockdesc {
+  left: auto;
+  right: 0;
+}
+.mejs-controls > div {
+  float: right;
+}
+.mejs-prev,
+.mejs-volume-button,
+.mejs-info,
+.mejs-minimize,
+.mejs-fullscreen-button {
+  border-right: 2px solid #383838;
+  border-left: 0;
+  padding-right: 10px;
+  padding-left: 0;
+}
+.mejs-rating .vote-ui {
+  left: auto;
+  right: 0;
+}
+.mejs-time span {
+  float: right;
+}
+.mejs-time-rail .mejs-time-float {
+  margin-right: -18px;
+  margin-left: 0;
+}
+.mejs-time-rail .mejs-time-float-corner {
+  right: 13px;
+  left: auto;
+}
+.mejs-volume-slider {
+  right: 10px;
+  left: auto;
+}
+.mejs-volume-total,
+.mejs-volume-current {
+  right: 11px;
+  left: auto;
+}
+.mejs-horizontal-volume-handle {
+  margin-right: -7px;
+  margin-left: 0;
+}
+.mejs-video .mejs-overlay {
+  left: auto;
+  right: 0;
+}
+.mejs-video .mejs-overlay-loading,
+.mejs-video .mejs-overlay-button {
+  margin: -40px -40px 0 0;
+}
+.mejs-video .mejs-volume-button,
+.mejs-video .mejs-fullscreen-button {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.go-extended a {
+  float: left;
+}
+.go-extended a:after {
+  left: 9px;
+  right: auto;
+}
+.track-visual .image .caption .small {
+  text-align: right;
+}
+.track-visual .image .visualization {
+  right: 0;
+  left: auto;
+}
+.track-visual .track-data p {
+  float: right;
+}
+.track-visual .track-data .release-date,
+.track-visual .track-data .length,
+.track-visual .track-data .genre {
+  text-align: left;
+}
+.track-visual .track-rating .views {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.track-visual .links .button {
+  float: right;
+}
+.track-visual .links .button i {
+  padding-left: 15px;
+  padding-right: 0;
+}
+.section-popular-tracks .top-week {
+  margin-right: 0;
+  margin-left: auto;
+}
+.section-popular-tracks .block-title .suffix {
+  margin-right: 0;
+  margin-left: auto;
+}
+.section-popular-tracks .track-no,
+.section-popular-tracks .track-title,
+.section-popular-tracks .track-image {
+  float: right;
+}
+.section-popular-tracks .track-no {
+  border-left: 2px solid #383838;
+  border-right: 0;
+}
+.section-popular-tracks .track-vote {
+  float: left;
+}
+.releases-slider .hide-detail {
+  left: -40px;
+  right: auto;
+}
+.releases-slider.item-expanded .flex-direction-nav {
+  left: 0;
+  right: auto;
+}
+.releases-slider.item-expanded .flex-direction-nav .flex-prev {
+  border-left: 2px solid #ffffff;
+  border-right: 0;
+}
+.album-cover:hover .view-detail {
+  right: 45%;
+  left: auto;
+}
+.album-cover:hover .play-album {
+  left: 45%;
+  right: auto;
+}
+.album-cover .view-detail {
+  right: -50px;
+  left: auto;
+}
+.album-cover .play-album {
+  left: -50px;
+  right: auto;
+}
+.album .album-info {
+  float: right;
+}
+.album .info p {
+  float: right;
+}
+.album .info .album-composer,
+.album .info .album-genre {
+  text-align: left;
+}
+.album .info span {
+  padding-right: 10px;
+  padding-left: 0;
+}
+.album .info span.label {
+  padding-right: 0;
+  padding-left: auto;
+}
+.album .album-sources .button {
+  float: right;
+}
+.album .album-sources .button i {
+  padding-left: 15px;
+  padding-right: 0;
+}
+.album .tracklist li:first-child {
+  padding-right: 3px;
+  padding-left: 0;
+}
+.album .tracklist .track-name .track-length {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.album .tracklist .vote-score {
+  float: left;
+}
+.sharrre {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.sharrre .share {
+  float: right;
+}
+.mCSB_scrollTools {
+  left: -5px;
+  right: auto;
+}
+.mCSB_container {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.top-scroll-bar.scroll-pane .mCSB_container {
+  margin-left: 0;
+  margin-right: auto;
+}
+.custom-scroll-nav {
+  float: left;
+  margin: -40px 0 0 -5px;
+}
+.section-slider #video-background,
+.section-slider #top-youtube-bg {
+  right: 0;
+  left: auto;
+}
+.section-slider.images .background-slider li {
+  float: right;
+}
+.vertical-slider .flex-direction-nav {
+  left: -40px;
+  right: auto;
+}
+.vertical-slider .flex-direction-nav a {
+  float: right;
+}
+.carousel li {
+  margin-left: 5px;
+  margin-right: 0;
+}
+.flex-direction-nav .flex-prev {
+  left: 0px;
+  text-align: left;
+}
+.flex-direction-nav a.flex-prev:before {
+  padding-left: 5px;
+}
+/* Pause/Play */
+.flex-pauseplay a {
+  right: 10px;
+  left: auto;
+}
+.section-subscribe input {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.section-subscribe input[type=submit] {
+  float: right;
+}
+.content {
+  float: right;
+}
+.content-sidebar .content {
+  margin-right: 0;
+  margin-left: auto;
+}
+.content-sidebar .sidebar {
+  float: left;
+}
+.content-sidebar .minimize-sidebar {
+  left: -40px;
+  right: auto;
+}
+.sidebar-content .content {
+  float: left;
+}
+.sidebar-content .sidebar {
+  margin-right: 0;
+  margin-left: auto;
+}
+.sidebar-content .minimize-sidebar {
+  right: -40px;
+  left: auto;
+}
+/* Entry thumbnail
+--------------------------------------*/
+.entry-thumbnail .entry-quote .quote:first-child {
+  margin-right: auto;
+}
+.entry-thumbnail .entry-quote .quote:before {
+  right: 0;
+  left: auto;
+}
+.entry-thumbnail .entry-quote .quote:after {
+  left: 0;
+  right: auto;
+}
+.entry-thumbnail .flexslider .flex-control-nav {
+  right: 20px;
+  left: auto;
+}
+.entry-thumbnail .mejs-controls .mejs-playpause-button {
+  padding-left: 0;
+}
+.entry-thumbnail .mejs-controls .mejs-stop {
+  border-left-width: 2px;
+  border-right-width: 0;
+}
+.entry-thumbnail .mejs-controls .mejs-volume-button {
+  border-right-width: 2px;
+  border-left-width: 0;
+}
+.entry-thumbnail .mejs-video .mejs-controls .mejs-volume-slider {
+  right: 20px;
+  left: 0;
+}
+.entry-thumbnail .mejs-audio .mejs-controls .mejs-volume-button {
+  padding-left: 0;
+  padding-right: auto;
+}
+.read-more:after,
+.entry-content .more-link:after {
+  padding: 0 5px 0 0;
+}
+.entry-content .more-link {
+  float: right;
+}
+.entry-info .entry-format,
+.entry-info .entry-date {
+  right: -40px;
+  left: auto;
+}
+.sidebar-content .entry-info .entry-format,
+.sidebar-content .entry-info .entry-date {
+  left: -40px;
+  right: auto;
+}
+/* Pagination
+--------------------------------------*/
+.pagination a.loading {
+  background-color: #495745;
+}
+.pagination a.loading:before {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.simple-navigation .next-posts {
+  float: left;
+  padding-right: 20px;
+  padding-left: 0;
+}
+.simple-navigation .prev-posts {
+  float: right;
+  padding-right: 20px;
+  padding-left: 0;
+}
+.numberic-navigation {
+  text-align: left;
+}
+.numberic-navigation a,
+.numberic-navigation span {
+  margin: 0 3px 0 0;
+}
+.navigation .next-post {
+  float: left;
+}
+.navigation .next-post a:after {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.navigation .prev-post a:before {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.comments-pagination {
+  text-align: left;
+}
+.comments-pagination span,
+.comments-pagination a {
+  margin: 0 5px 0 0;
+}
+.single .content article .tags-links {
+  float: left;
+  margin-left: 30px;
+  width: 770px;
+  *display: inline;
+  display: inline-block;
+  zoom: 1;
+  float: right;
+  margin-right: 30px;
+  margin-left: 0;
+  margin: 40px -40px 0 0;
+}
+.single .content article .tags-links.first,
+.single .content article .tags-links:first-child {
+  margin-left: 0;
+}
+.single .content article .tags-links.first,
+.single .content article .tags-links:first-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+.author-box .avatar {
+  float: right;
+}
+.author-box .info {
+  margin-right: 160px;
+  margin-left: 0;
+}
+.author-box .num-posts {
+  float: left;
+}
+.comments-title {
+  float: right;
+}
+.commentlist .children {
+  padding: 0 110px 0 0;
+}
+.commentlist article header,
+.commentlist article footer,
+.commentlist article .comment-content {
+  margin-right: 110px;
+  margin-left: 0;
+}
+.commentlist .avatar {
+  float: right;
+}
+.commentlist .comment-reply-link {
+  left: 0;
+  right: auto;
+}
+.commentlist .comment-reply-link:after {
+  margin-right: 5px;
+  margin-left: 0;
+}
+.commentlist .depth-5 .comment-reply-link {
+  float: left;
+}
+.comment-respond .comment-form-author:before,
+.comment-respond .comment-form-url:before,
+.comment-respond .comment-form-email:before,
+.comment-respond .comment-form-comment:before {
+  left: 20px;
+  right: auto;
+}
+.comment-respond .comment-form-comment {
+  float: left;
+}
+.widget ul ul {
+  padding-right: 20px;
+  padding-left: 0;
+}
+.widget li:before {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.widget .menu li a {
+  padding: 10px 20px 10px 0;
+  border-right: 4px solid #383838;
+  border-left: 0;
+}
+.widget .menu li a:hover {
+  border-right-color: #495745;
+}
+.widget_tag_cloud a {
+  margin-left: 2px;
+  margin-right: 0;
+}
+.widget_noise-tweets .tweet {
+  padding: 20px 30px 20px 0;
+}
+.widget_noise-tweets .tweet i {
+  text-align: right;
+  right: 0px;
+  left: auto;
+}
+.noise-recent-posts .thumb img {
+  float: right;
+}
+.noise-recent-posts .text {
+  margin-right: 75px;
+  margin-left: 0;
+}
+.widget-tabs li {
+  border-right: 0px;
+  border-left: 2px solid #dcdcdc;
+}
+.widget-tabs li:last-child {
+  border-left: 0px;
+}
+.widget-tabs a.active {
+  border-right: 0px;
+  border-left: auto;
+}
+.widget.widget_wysija .wysija-paragraph:before {
+  font-family: 'Entypo';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  left: 20px;
+  right: auto;
+}
+.widget.widget_wysija input[type=text] {
+  padding-left: 40px;
+  padding-right: 0;
+}
+.widget-featured-tracks .track-no,
+.widget-featured-tracks .track-image {
+  float: right;
+}
+.widget-featured-tracks .track-image {
+  margin: 0 0 0 10px;
+}
+.widget-featured-tracks .track-image .play-track {
+  right: 0;
+  left: auto;
+}
+.widget-featured-tracks .track-title {
+  padding: 0 0 0 10px;
+}
+.widget_noise-artists .artist img {
+  float: right;
+}
+.widget_noise-artists .artist span {
+  margin-right: 75px;
+  margin-left: 0;
+}
+@media only screen and (max-width: 1169px) {
+  .section-popular-tracks .popular-tracks {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .releases-slider .album .album-tracks {
+    margin-right: 450px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .track-info .artist-info {
+    width: 220px;
+  }
+  .track-info .artist-image {
+    height: 100%;
+  }
+  .track-info .track-summary .links {
+    right: 40px;
+    left: auto;
+  }
+  .track-info .track-rating {
+    float: right;
+  }
+  .track-info .player-playshuffle,
+  .track-info .player-playloop {
+    float: left;
+  }
+  .section-releases .album .album-composer,
+  .section-releases .album .album-genre {
+    text-align: right;
+  }
+  .section-releases .album .album-tracks {
+    float: left;
+  }
+  .artists-slider .artist {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .artists-slider .artist .artist-info {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 799px) {
+  #cboxClose {
+    left: 0;
+    right: auto;
+  }
+  .media-slider .flex-direction-nav {
+    left: -38px;
+    right: auto;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .section-opener .unlocker .handle {
+    margin-left: -250px;
+  }
+  .vertical-slider .flex-direction-nav {
+    left: 0;
+    right: auto;
+  }
+  .vertical-slider .flex-direction-nav a.flex-prev {
+    left: 40px;
+    right: auto;
+  }
+  .media-slider .hentry {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .media-slider .flex-direction-nav {
+    left: 0;
+    right: auto;
+  }
+  .tabs.simple-tabs .tabs-nav {
+    left: auto;
+    right: 0;
+  }
+  .section-releases .album-cover .view-detail {
+    right: 30%;
+    left: auto;
+  }
+  .section-releases .album-cover .play-album {
+    left: 30%;
+    right: auto;
+  }
+  .releases-slider.item-expanded .hide-detail {
+    left: 0;
+    right: auto;
+  }
+  .section-events .group-status,
+  .section-events .past-event .infor-event {
+    left: 0;
+    right: auto;
+  }
+  .section-events .vertical-slider .flex-direction-nav {
+    left: -10px;
+    right: auto;
+  }
+  .artists-slider .artist-direction-nav {
+    left: 0;
+    right: auto;
+  }
+  .artists-slider .artist-direction-nav a.artist-prev {
+    border-left: none;
+    margin-left: -3px;
+    margin-right: 0;
+  }
+  .artists-slider .hide-detail {
+    left: auto;
+    right: 0;
+  }
+  .single .content article .tags-links {
+    margin: 20px -20px 0 0;
+  }
+  .commentlist .children {
+    padding-right: 60px;
+    padding-left: 0;
+  }
+  .commentlist article header,
+  .commentlist article footer {
+    margin-right: 60px;
+    margin-left: 0;
+  }
+  .commentlist article .comment-content {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

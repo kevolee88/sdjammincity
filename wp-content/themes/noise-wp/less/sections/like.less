@@ -1,0 +1,81 @@
+.section-like {
+	min-height: 600px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 100px 0;
+
+	.social-message {
+		position: relative;
+		font-size: 90px;
+		line-height: 1;
+		p {
+			margin-bottom: 25px;
+		}
+		.odd:first-child{
+			font-weight: 700;
+		}
+
+		.even {
+			font-size: 50%;
+		}
+	}
+	.social {
+		margin-top: 60px;
+	}
+	.social-button-large {
+		.transition(all 0.5s ease-in);
+		.opacity(20);
+		.inline-block;
+		background: @text-color;
+		font-size: 22px;
+		line-height: 1;
+		color: #2f5991;
+		position: relative;
+		cursor: pointer;
+
+		&:hover {
+			.opacity(100);
+			color: @text-color;
+			background: #2f5991;
+
+			a {
+				color: @text-color;
+			}
+		}
+
+		&.liked,
+		&.followed {
+			.opacity(20);
+			cursor: pointer;
+		}
+
+		a {
+			.transition(all 0.5s ease-in);
+			color: #2f5991;
+			display: block;
+			padding: 14px 25px;
+		}
+
+	}
+	.twitter-follow{
+		a{
+			color: #59C8EF;
+		}
+		&:hover {
+			background-color: #59C8EF;
+		}
+	}
+	.middle-area {
+		.inline-block;
+		width: 62px;
+		height: 62px;
+		margin-top: -5px;
+		color: @text-color;
+		font-size: 40px;
+		line-height: 62px;
+		margin: 0 -3px 0 -4px;
+		position: relative;
+		bottom: -7px;
+		background-color: @border-box;
+	}
+}

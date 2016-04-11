@@ -1,0 +1,3678 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NOISE v3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-17 13:57+0700\n"
+"PO-Revision-Date: 2014-12-24 10:28:37+0000\n"
+"Last-Translator: FitWP <info@fitwp.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:8
+#@ noise
+msgid "The page your're looking for not found"
+msgstr ""
+
+#: 404.php:9
+#@ noise
+msgid "Return to homepage"
+msgstr ""
+
+#: archive.php:18
+#@ noise
+msgid "Archive"
+msgstr ""
+
+#: archive.php:20
+#@ noise
+msgid "Author Archive"
+msgstr ""
+
+#: archive.php:33
+#: index.php:28
+#: search.php:24
+#: template-blog.php:35
+#@ noise
+msgid "No post found"
+msgstr ""
+
+#: comment.php:14
+#@ noise
+msgid " ago"
+msgstr ""
+
+#: comment.php:23
+#@ noise
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: comments.php:15
+#, php-format
+#@ noise
+msgid "1 Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:34
+#, php-format
+#@ noise
+msgid "1 Trackback"
+msgid_plural "%s Trackbacks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: content/content.php:10
+#@ noise
+msgid "By"
+msgstr ""
+
+#: content/content.php:11
+#: inc/widgets/tabs.php:41
+#@ noise
+msgid "Comments"
+msgstr ""
+
+#: content/content.php:11
+#@ noise
+msgid "No comment"
+msgstr ""
+
+#: content/content.php:12
+#: sections/latest-news.php:39
+#@ noise
+msgid "Category"
+msgstr ""
+
+#: content/content.php:21
+#@ noise
+msgid "Edit This Post"
+msgstr ""
+
+#: content/content.php:46
+#@ noise
+msgid "Pages:"
+msgstr ""
+
+#: footer.php:31
+#@ noise
+msgid "Noise"
+msgstr ""
+
+#: footer.php:31
+#@ noise
+msgid "&copy; 2014"
+msgstr ""
+
+#: functions.php:71
+#@ noise
+msgid "Primary Navigation"
+msgstr ""
+
+#: functions.php:75
+#@ noise
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/admin/admin.php:45
+#@ noise
+msgid "Once Weekly"
+msgstr ""
+
+#: inc/admin/admin.php:50
+#@ noise
+msgid "Once a month"
+msgstr ""
+
+#: inc/admin/admin.php:213
+#@ noise
+msgid "Required Plugins"
+msgstr ""
+
+#: inc/admin/admin.php:214
+#: inc/functions/class-tgm-plugin-activation.php:165
+#@ noise
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/admin/admin.php:215
+#: inc/functions/class-tgm-plugin-activation.php:166
+#, php-format
+#@ noise
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/admin/admin.php:216
+#@ noise
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/admin/admin.php:217
+#: inc/functions/class-tgm-plugin-activation.php:168
+#, php-format
+#@ noise
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:218
+#: inc/functions/class-tgm-plugin-activation.php:169
+#, php-format
+#@ noise
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:219
+#: inc/functions/class-tgm-plugin-activation.php:170
+#, php-format
+#@ noise
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:220
+#: inc/functions/class-tgm-plugin-activation.php:171
+#, php-format
+#@ noise
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:221
+#: inc/functions/class-tgm-plugin-activation.php:172
+#, php-format
+#@ noise
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:222
+#: inc/functions/class-tgm-plugin-activation.php:173
+#, php-format
+#@ noise
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:223
+#: inc/functions/class-tgm-plugin-activation.php:174
+#, php-format
+#@ noise
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:224
+#: inc/functions/class-tgm-plugin-activation.php:175
+#, php-format
+#@ noise
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:225
+#: inc/functions/class-tgm-plugin-activation.php:176
+#@ noise
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:226
+#: inc/functions/class-tgm-plugin-activation.php:177
+#@ noise
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/admin/admin.php:227
+#: inc/functions/class-tgm-plugin-activation.php:178
+#: inc/functions/class-tgm-plugin-activation.php:490
+#@ noise
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/admin/admin.php:228
+#: inc/functions/class-tgm-plugin-activation.php:179
+#: inc/functions/class-tgm-plugin-activation.php:1846
+#@ noise
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/admin/admin.php:229
+#, php-format
+#@ noise
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: inc/admin/admin.php:249
+#: inc/admin/admin.php:299
+#@ noise
+msgid "Featured"
+msgstr ""
+
+#: inc/admin/admin.php:279
+#: inc/admin/admin.php:329
+#@ noise
+msgid "Toggle Featured"
+msgstr ""
+
+#: inc/admin/ajax.php:39
+#@ noise
+msgid "Invalid request"
+msgstr ""
+
+#: inc/admin/ajax.php:181
+#, php-format
+#@ noise
+msgid "New contact message from %s"
+msgstr ""
+
+#: inc/admin/ajax.php:182
+#@ noise
+msgid "Reply via her/him email"
+msgstr ""
+
+#: inc/admin/meta-box.php:27
+#: inc/post-types.php:112
+#@ noise
+msgid "Gallery"
+msgstr ""
+
+#: inc/admin/meta-box.php:32
+#: inc/admin/meta-box.php:275
+#: inc/admin/meta-box.php:387
+#@ noise
+msgid "Images"
+msgstr ""
+
+#: inc/admin/meta-box.php:41
+#: inc/admin/meta-box.php:46
+#: inc/admin/meta-box.php:77
+#@ noise
+msgid "Link"
+msgstr ""
+
+#: inc/admin/meta-box.php:49
+#@ noise
+msgid "Enter your url here"
+msgstr ""
+
+#: inc/admin/meta-box.php:56
+#: inc/admin/meta-box.php:61
+#: inc/functions/options/inc/fields.php:833
+#@ noise
+#@ fitwp
+msgid "Quote"
+msgstr ""
+
+#: inc/admin/meta-box.php:64
+#@ noise
+msgid "Enter quote content"
+msgstr ""
+
+#: inc/admin/meta-box.php:67
+#@ noise
+msgid "Author"
+msgstr ""
+
+#: inc/admin/meta-box.php:70
+#@ noise
+msgid "Enter quote author's name"
+msgstr ""
+
+#: inc/admin/meta-box.php:82
+#: inc/options.php:360
+#: inc/options.php:921
+#@ noise
+msgid "Video"
+msgstr ""
+
+#: inc/admin/meta-box.php:85
+#@ noise
+msgid "Enter video url or upload or pick one from library"
+msgstr ""
+
+#: inc/admin/meta-box.php:92
+#: inc/admin/meta-box.php:97
+#@ noise
+msgid "Audio"
+msgstr ""
+
+#: inc/admin/meta-box.php:100
+#@ noise
+msgid "Enter audio url or upload or pick one from library"
+msgstr ""
+
+#: inc/admin/meta-box.php:103
+#@ noise
+msgid "Spectrum"
+msgstr ""
+
+#: inc/admin/meta-box.php:106
+#@ noise
+msgid "Play this audio with spectrum"
+msgstr ""
+
+#: inc/admin/meta-box.php:113
+#: inc/admin/meta-box.php:118
+#@ noise
+msgid "Blog Description"
+msgstr ""
+
+#: inc/admin/meta-box.php:121
+#@ noise
+msgid "Enter description for blog title"
+msgstr ""
+
+#: inc/admin/meta-box.php:149
+#@ noise
+msgid "Under construction"
+msgstr ""
+
+#: inc/admin/meta-box.php:154
+#@ noise
+msgid "Under Construction Notice"
+msgstr ""
+
+#: inc/admin/meta-box.php:157
+#@ noise
+msgid "Write something to notice visitor that your site is under construction. If you leave empty, page title will be used be default."
+msgstr ""
+
+#: inc/admin/meta-box.php:160
+#@ noise
+msgid "Under construction Description"
+msgstr ""
+
+#: inc/admin/meta-box.php:163
+#@ noise
+msgid "More information about your notice"
+msgstr ""
+
+#: inc/admin/meta-box.php:166
+#@ noise
+msgid "Ending date"
+msgstr ""
+
+#: inc/admin/meta-box.php:169
+#@ noise
+msgid "Select the date when your site is complete"
+msgstr ""
+
+#: inc/admin/meta-box.php:171
+#@ noise
+msgid "(yyyy-mm-dd hh:ii)"
+msgstr ""
+
+#: inc/admin/meta-box.php:172
+#@ noise
+msgid "yy-mm-dd"
+msgstr ""
+
+#: inc/admin/meta-box.php:179
+#: inc/options.php:335
+#: inc/options.php:365
+#: inc/options.php:507
+#: inc/options.php:625
+#: inc/options.php:710
+#: inc/options.php:831
+#: inc/options.php:926
+#: inc/options.php:1047
+#: inc/options.php:1129
+#@ noise
+msgid "Background Image"
+msgstr ""
+
+#: inc/admin/meta-box.php:182
+#@ noise
+msgid "Upload background image for under construction page"
+msgstr ""
+
+#: inc/admin/meta-box.php:190
+#@ noise
+msgid "Artist Information"
+msgstr ""
+
+#: inc/admin/meta-box.php:194
+#@ noise
+msgid "Featured Artist"
+msgstr ""
+
+#: inc/admin/meta-box.php:197
+#@ noise
+msgid "Featured artists can be displayed on Onpage when allowed in Theme Options"
+msgstr ""
+
+#: inc/admin/meta-box.php:200
+#: sections/artists.php:71
+#@ noise
+msgid "Full Name"
+msgstr ""
+
+#: inc/admin/meta-box.php:205
+#: sections/artists.php:77
+#@ noise
+msgid "Nick Name"
+msgstr ""
+
+#: inc/admin/meta-box.php:210
+#@ noise
+msgid "Date Of Birth"
+msgstr ""
+
+#: inc/admin/meta-box.php:215
+#: inc/admin/meta-box.php:342
+#: inc/admin/meta-box.php:524
+#@ noise
+msgid "(yyyy/mm/dd)"
+msgstr ""
+
+#: inc/admin/meta-box.php:224
+#: sections/artists.php:89
+#@ noise
+msgid "Place Of Birth"
+msgstr ""
+
+#: inc/admin/meta-box.php:229
+#: sections/artists.php:95
+#@ noise
+msgid "Occupation"
+msgstr ""
+
+#: inc/admin/meta-box.php:234
+#: sections/artists.php:103
+#@ noise
+msgid "Best Known For"
+msgstr ""
+
+#: inc/admin/meta-box.php:240
+#: sections/artists.php:114
+#@ noise
+msgid "Synopsis"
+msgstr ""
+
+#: inc/admin/meta-box.php:245
+#@ noise
+msgid "Facebook Link"
+msgstr ""
+
+#: inc/admin/meta-box.php:250
+#@ noise
+msgid "Twitter Link"
+msgstr ""
+
+#: inc/admin/meta-box.php:255
+#@ noise
+msgid "SoundCloud Link"
+msgstr ""
+
+#: inc/admin/meta-box.php:260
+#@ noise
+msgid "Google Plus Link"
+msgstr ""
+
+#: inc/admin/meta-box.php:265
+#@ noise
+msgid "Vimeo Link "
+msgstr ""
+
+#: inc/admin/meta-box.php:284
+#@ noise
+msgid "Track Information"
+msgstr ""
+
+#: inc/admin/meta-box.php:288
+#@ noise
+msgid "Featured Track"
+msgstr ""
+
+#: inc/admin/meta-box.php:291
+#@ noise
+msgid "Featured artists can be displayed on Widget Noise - Featured Track"
+msgstr ""
+
+#: inc/admin/meta-box.php:307
+#: inc/post-types.php:64
+#@ noise
+msgid "Album"
+msgstr ""
+
+#: inc/admin/meta-box.php:320
+#: inc/post-types.php:40
+#: inc/track.php:198
+#@ noise
+msgid "Artist"
+msgstr ""
+
+#: inc/admin/meta-box.php:333
+#: inc/admin/meta-box.php:532
+#: inc/track.php:200
+#: sections/releases.php:64
+#@ noise
+msgid "Composer"
+msgstr ""
+
+#: inc/admin/meta-box.php:338
+#: inc/track.php:197
+#: sections/releases.php:69
+#@ noise
+msgid "Release Date"
+msgstr ""
+
+#: inc/admin/meta-box.php:350
+#: inc/admin/meta-box.php:537
+#: inc/track.php:201
+#: sections/releases.php:74
+#@ noise
+msgid "Genre"
+msgstr ""
+
+#: inc/admin/meta-box.php:355
+#: inc/track.php:199
+#@ noise
+msgid "Length"
+msgstr ""
+
+#: inc/admin/meta-box.php:365
+#@ noise
+msgid "Track Upload"
+msgstr ""
+
+#: inc/admin/meta-box.php:370
+#: inc/functions/options/inc/fields.php:658
+#@ noise
+#@ fitwp
+msgid "SoundCloud URL"
+msgstr ""
+
+#: inc/admin/meta-box.php:375
+#@ noise
+msgid "Lyrics"
+msgstr ""
+
+#: inc/admin/meta-box.php:381
+#: inc/admin/meta-box.php:581
+#: sections/media.php:37
+#@ noise
+msgid "Videos"
+msgstr ""
+
+#: inc/admin/meta-box.php:390
+#: inc/admin/meta-box.php:503
+#: inc/admin/meta-box.php:589
+#@ noise
+msgid "Best size for image is 1150x540px. You can use images with bigger resolution."
+msgstr ""
+
+#: inc/admin/meta-box.php:393
+#@ noise
+msgid "Cover Image"
+msgstr ""
+
+#: inc/admin/meta-box.php:397
+#@ noise
+msgid "This cover image will be displayed on extended player. This is optional. If no image is set, the first image in gallery will be used."
+msgstr ""
+
+#: inc/admin/meta-box.php:400
+#: inc/track.php:207
+#@ noise
+msgid "Views"
+msgstr ""
+
+#: inc/admin/meta-box.php:406
+#@ noise
+msgid "Views Weekly"
+msgstr ""
+
+#: inc/admin/meta-box.php:412
+#@ noise
+msgid "Views Monthly"
+msgstr ""
+
+#: inc/admin/meta-box.php:418
+#: inc/track.php:208
+#@ noise
+msgid "Votes"
+msgstr ""
+
+#: inc/admin/meta-box.php:424
+#@ noise
+msgid "Number Of Votes"
+msgstr ""
+
+#: inc/admin/meta-box.php:430
+#@ noise
+msgid "Votes Weekly"
+msgstr ""
+
+#: inc/admin/meta-box.php:436
+#@ noise
+msgid "Number Of Votes In Week"
+msgstr ""
+
+#: inc/admin/meta-box.php:442
+#@ noise
+msgid "Votes Monthly"
+msgstr ""
+
+#: inc/admin/meta-box.php:448
+#@ noise
+msgid "Number Of Votes In Month"
+msgstr ""
+
+#: inc/admin/meta-box.php:458
+#@ noise
+msgid "Event Information"
+msgstr ""
+
+#: inc/admin/meta-box.php:462
+#@ noise
+msgid "Event Datetime"
+msgstr ""
+
+#: inc/admin/meta-box.php:473
+#@ noise
+msgid "Information"
+msgstr ""
+
+#: inc/admin/meta-box.php:478
+#@ noise
+msgid "Place"
+msgstr ""
+
+#: inc/admin/meta-box.php:483
+#: inc/functions/class-tgm-plugin-activation.php:1300
+#@ noise
+msgid "Status"
+msgstr ""
+
+#: inc/admin/meta-box.php:487
+#@ noise
+msgid "Available"
+msgstr ""
+
+#: inc/admin/meta-box.php:488
+#: sections/events.php:71
+#@ noise
+msgid "Sold Out"
+msgstr ""
+
+#: inc/admin/meta-box.php:489
+#: sections/events.php:75
+#@ noise
+msgid "Canceled"
+msgstr ""
+
+#: inc/admin/meta-box.php:490
+#: sections/events.php:73
+#@ noise
+msgid "Free"
+msgstr ""
+
+#: inc/admin/meta-box.php:495
+#@ noise
+msgid "Buy Ticket Link"
+msgstr ""
+
+#: inc/admin/meta-box.php:500
+#@ noise
+msgid "Event Images"
+msgstr ""
+
+#: inc/admin/meta-box.php:506
+#@ noise
+msgid "Event Video"
+msgstr ""
+
+#: inc/admin/meta-box.php:516
+#@ noise
+msgid "Album Information"
+msgstr ""
+
+#: inc/admin/meta-box.php:520
+#: inc/widgets/featured-tracks.php:214
+#@ noise
+msgid "Date"
+msgstr ""
+
+#: inc/admin/meta-box.php:542
+#@ noise
+msgid "Itunes Link"
+msgstr ""
+
+#: inc/admin/meta-box.php:547
+#@ noise
+msgid "Amazon Link"
+msgstr ""
+
+#: inc/admin/meta-box.php:552
+#@ noise
+msgid "Spotify"
+msgstr ""
+
+#: inc/admin/meta-box.php:557
+#: sections/releases.php:111
+#@ noise
+msgid "Review"
+msgstr ""
+
+#: inc/admin/meta-box.php:572
+#@ noise
+msgid "Gallery Information"
+msgstr ""
+
+#: inc/admin/meta-box.php:576
+#: inc/functions/class-tgm-plugin-activation.php:1299
+#@ noise
+msgid "Type"
+msgstr ""
+
+#: inc/admin/meta-box.php:580
+#: inc/options.php:668
+#: sections/media.php:36
+#@ noise
+msgid "Photos"
+msgstr ""
+
+#: inc/admin/meta-box.php:586
+#@ noise
+msgid "Gallery Images"
+msgstr ""
+
+#: inc/admin/meta-box.php:592
+#@ noise
+msgid "Gallery Video"
+msgstr ""
+
+#: inc/admin/meta-box.php:614
+#@ noise
+msgid "Noise Sections"
+msgstr ""
+
+#: inc/admin/meta-box.php:632
+#@ noise
+msgid "Slider"
+msgstr ""
+
+#: inc/admin/meta-box.php:633
+#: inc/options.php:272
+#: inc/options.php:450
+#: inc/options.php:479
+#@ noise
+msgid "Latest Tracks"
+msgstr ""
+
+#: inc/admin/meta-box.php:634
+#: inc/options.php:496
+#@ noise
+msgid "Like & Follow"
+msgstr ""
+
+#: inc/admin/meta-box.php:635
+#: inc/options.php:274
+#: inc/options.php:563
+#: inc/options.php:592
+#@ noise
+msgid "Popular Tracks"
+msgstr ""
+
+#: inc/admin/meta-box.php:636
+#@ noise
+msgid "Testimonials"
+msgstr ""
+
+#: inc/admin/meta-box.php:637
+#: inc/options.php:276
+#: inc/options.php:640
+#: inc/options.php:657
+#@ noise
+msgid "Media"
+msgstr ""
+
+#: inc/admin/meta-box.php:638
+#@ noise
+msgid "Tweets"
+msgstr ""
+
+#: inc/admin/meta-box.php:639
+#: inc/options.php:278
+#: inc/options.php:774
+#@ noise
+msgid "Releases"
+msgstr ""
+
+#: inc/admin/meta-box.php:640
+#: inc/options.php:279
+#: inc/options.php:820
+#@ noise
+msgid "Subscribe"
+msgstr ""
+
+#: inc/admin/meta-box.php:641
+#: inc/options.php:280
+#: inc/options.php:859
+#@ noise
+msgid "Events"
+msgstr ""
+
+#: inc/admin/meta-box.php:642
+#@ noise
+msgid "Countdown"
+msgstr ""
+
+#: inc/admin/meta-box.php:643
+#@ noise
+msgid "DJ & Band"
+msgstr ""
+
+#: inc/admin/meta-box.php:644
+#@ noise
+msgid "Contact"
+msgstr ""
+
+#: inc/admin/meta-box.php:645
+#: inc/options.php:283
+#: inc/options.php:1324
+#: single.php:11
+#@ noise
+msgid "Blog"
+msgstr ""
+
+#: inc/admin/meta-box.php:646
+#: inc/options.php:284
+#: inc/options.php:1074
+#: inc/options.php:1103
+#@ noise
+msgid "Latest News"
+msgstr ""
+
+#: inc/admin/meta-box.php:649
+#: inc/options.php:288
+#: inc/options.php:1282
+#@ noise
+msgid "Custom Content"
+msgstr ""
+
+#: inc/frontend/comments.php:46
+#@ noise
+msgid "Post a comment"
+msgstr ""
+
+#: inc/frontend/comments.php:48
+#@ noise
+msgid "Name"
+msgstr ""
+
+#: inc/frontend/comments.php:49
+#@ noise
+msgid "Website"
+msgstr ""
+
+#: inc/frontend/comments.php:50
+#@ noise
+msgid "Email"
+msgstr ""
+
+#: inc/frontend/comments.php:52
+#@ noise
+msgid "Message..."
+msgstr ""
+
+#: inc/frontend/comments.php:53
+#@ noise
+msgid "You can write your comments about this post through the form below"
+msgstr ""
+
+#: inc/frontend/entry.php:62
+#, php-format
+#@ noise
+msgid "Continue reading &quot;%s&quot;"
+msgstr ""
+
+#: inc/frontend/entry.php:126
+#@ noise
+msgid "No location found."
+msgstr ""
+
+#: inc/frontend/entry.php:130
+#@ noise
+msgid "Invalid request."
+msgstr ""
+
+#: inc/frontend/entry.php:134
+#@ noise
+msgid "Something went wrong while retrieving map."
+msgstr ""
+
+#: inc/frontend/entry.php:139
+#@ noise
+msgid "Unable to contact Google API service."
+msgstr ""
+
+#: inc/frontend/entry.php:222
+#: sections/artists.php:149
+#@ noise
+msgid "Previous"
+msgstr ""
+
+#: inc/frontend/entry.php:223
+#: sections/artists.php:150
+#@ noise
+msgid "Next"
+msgstr ""
+
+#: inc/frontend/entry.php:247
+#@ noise
+msgid "Load more"
+msgstr ""
+
+#: inc/frontend/entry.php:266
+#@ noise
+msgid "Previous Page"
+msgstr ""
+
+#: inc/frontend/entry.php:267
+#@ noise
+msgid "Next Page"
+msgstr ""
+
+#: inc/frontend/entry.php:285
+#@ noise
+msgid "Previous Post"
+msgstr ""
+
+#: inc/frontend/entry.php:286
+#@ noise
+msgid "Next Post"
+msgstr ""
+
+#: inc/frontend/entry.php:423
+#@ noise
+msgid "About Author"
+msgstr ""
+
+#: inc/frontend/entry.php:429
+#@ noise
+msgid "Number of posts"
+msgstr ""
+
+#: inc/frontend/frontend.php:31
+#, php-format
+#@ noise
+msgid "Page %s"
+msgstr ""
+
+#: inc/frontend/media.php:80
+#@ noise
+msgid "Menu"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:164
+#@ noise
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:167
+#@ noise
+msgid "Something went wrong."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:180
+#, php-format
+#@ noise
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:517
+#: inc/functions/class-tgm-plugin-activation.php:2058
+#@ noise
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:545
+#, php-format
+#@ noise
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:704
+#@ noise
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1091
+#@ noise
+msgid "External Link"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1096
+#@ noise
+msgid "Private Repository"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1099
+#@ noise
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1103
+#@ noise
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1106
+#@ noise
+msgid "Required"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1106
+#@ noise
+msgid "Recommended"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1109
+#@ noise
+msgid "Not Installed"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1111
+#@ noise
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1281
+#, php-format
+#@ noise
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1297
+#@ noise
+msgid "Plugin"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1298
+#@ noise
+msgid "Source"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1318
+#@ noise
+msgid "Install"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1319
+#@ noise
+msgid "Activate"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1544
+#@ noise
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1829
+#@ noise
+msgid "Install package not available."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1830
+#, php-format
+#@ noise
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1831
+#@ noise
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1832
+#@ noise
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1833
+#@ noise
+msgid "Plugin install failed."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1834
+#@ noise
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1845
+#@ noise
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1955
+#@ noise
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1956
+#, php-format
+#@ noise
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1956
+#: inc/functions/class-tgm-plugin-activation.php:1965
+#@ noise
+msgid "Show Details"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1956
+#: inc/functions/class-tgm-plugin-activation.php:1965
+#@ noise
+msgid "Hide Details"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1957
+#@ noise
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1958
+#, php-format
+#@ noise
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1962
+#@ noise
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1963
+#, php-format
+#@ noise
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1964
+#, php-format
+#@ noise
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1965
+#, php-format
+#@ noise
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1966
+#@ noise
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/functions/class-tgm-plugin-activation.php:1967
+#, php-format
+#@ noise
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/functions/options/inc/admin.php:35
+#@ fitwp
+msgid "Theme Options"
+msgstr ""
+
+#: inc/functions/options/inc/admin.php:57
+#@ fitwp
+msgid "This action can't be undo. Are you sure want to reset?"
+msgstr ""
+
+#: inc/functions/options/inc/admin.php:58
+#@ fitwp
+msgid "All previous options will be overwritten.  Are you sure want to import?"
+msgstr ""
+
+#: inc/functions/options/inc/admin.php:59
+#@ fitwp
+msgid "Select Image"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:235
+#@ fitwp
+msgid "Select"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:489
+#@ fitwp
+msgid "Add Sidebar"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:581
+#@ fitwp
+msgid "Color"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:586
+#: inc/functions/options/inc/fields.php:799
+#: inc/options.php:920
+#@ fitwp
+#@ noise
+msgid "Image"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:593
+#@ fitwp
+msgid "Position X"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:595
+#@ fitwp
+msgid "Left"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:596
+#: inc/functions/options/inc/fields.php:606
+#@ fitwp
+msgid "Center"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:597
+#@ fitwp
+msgid "Right"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:603
+#@ fitwp
+msgid "Position Y"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:605
+#@ fitwp
+msgid "Top"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:607
+#@ fitwp
+msgid "Bottom"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:615
+#: inc/functions/options/inc/fields.php:617
+#@ fitwp
+msgid "Repeat"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:618
+#@ fitwp
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:619
+#@ fitwp
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:620
+#@ fitwp
+msgid "No Repeat"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:626
+#@ fitwp
+msgid "Attachment"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:628
+#@ fitwp
+msgid "Scroll"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:629
+#@ fitwp
+msgid "Fixed"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:648
+#@ fitwp
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:649
+#@ fitwp
+msgid "Twitter URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:650
+#@ fitwp
+msgid "Flickr URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:651
+#@ fitwp
+msgid "Vimeo URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:652
+#@ fitwp
+msgid "Google Plus URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:653
+#@ fitwp
+msgid "LinkedIn URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:654
+#@ fitwp
+msgid "Pinterest URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:655
+#@ fitwp
+msgid "Skype ID"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:656
+#@ fitwp
+msgid "Behance URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:657
+#@ fitwp
+msgid "Dribbble URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:659
+#@ fitwp
+msgid "GitHub URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:660
+#@ fitwp
+msgid "Instagram URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:661
+#@ fitwp
+msgid "Tumblr URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:662
+#@ fitwp
+msgid "Reverbnation URL"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:748
+#@ fitwp
+msgid "Import Options"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:791
+#@ fitwp
+msgid "Slide"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:792
+#@ fitwp
+msgid "Caption"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:834
+#@ fitwp
+msgid "Author name"
+msgstr ""
+
+#: inc/functions/options/inc/fields.php:841
+#@ fitwp
+msgid "Quote content"
+msgstr ""
+
+#: inc/functions/options/inc/page.php:48
+#: inc/functions/options/inc/page.php:91
+#@ fitwp
+msgid "Reset Options"
+msgstr ""
+
+#: inc/functions/options/inc/page.php:49
+#: inc/functions/options/inc/page.php:92
+#@ fitwp
+msgid "Save Changes"
+msgstr ""
+
+#: inc/functions/options/inc/page.php:59
+#, php-format
+#@ fitwp
+msgid "By <a href=\"%s\" target=\"_blank\">%s</a>"
+msgstr ""
+
+#: inc/options.php:17
+#@ noise
+msgid "General"
+msgstr ""
+
+#: inc/options.php:30
+#@ noise
+msgid "Under Construction Mode"
+msgstr ""
+
+#: inc/options.php:33
+#@ noise
+msgid "Switch your site to under construction mode."
+msgstr ""
+
+#: inc/options.php:34
+#@ noise
+msgid "You have to create a page using template \"Under Construction\" to make this mode work correctly."
+msgstr ""
+
+#: inc/options.php:41
+#@ noise
+msgid "Auto Play"
+msgstr ""
+
+#: inc/options.php:44
+#@ noise
+msgid "Allow player to auto start playing after website is loaded"
+msgstr ""
+
+#: inc/options.php:55
+#@ noise
+msgid "Intro Audio"
+msgstr ""
+
+#: inc/options.php:58
+#@ noise
+msgid "Play a track as the intro audio when website is loaded. Remember to enable Auto Play above."
+msgstr ""
+
+#: inc/options.php:62
+#@ noise
+msgid "Intro Track"
+msgstr ""
+
+#: inc/options.php:64
+#@ noise
+msgid "Select a track to play as intro"
+msgstr ""
+
+#: inc/admin/meta-box.php:294
+#: inc/options.php:71
+#@ noise
+msgid "Show Download Button"
+msgstr ""
+
+#: inc/options.php:78
+#@ noise
+msgid "Track Vote Timeout"
+msgstr ""
+
+#: inc/options.php:80
+#@ noise
+msgid "days"
+msgstr ""
+
+#: inc/options.php:82
+#@ noise
+msgid "Number of days a vistor can vote a track again"
+msgstr ""
+
+#: inc/options.php:83
+#@ noise
+msgid "Set to 0 to allow visitors vote anytime"
+msgstr ""
+
+#: inc/options.php:90
+#@ noise
+msgid "Favicon"
+msgstr ""
+
+#: inc/options.php:92
+#, php-format
+#@ noise
+msgid "Specify a <a href=\"%s\" target=\"_blank\">favicon</a> for your site. Accepted formats: .ico, .png, .gif."
+msgstr ""
+
+#: inc/options.php:96
+#@ noise
+msgid "Touch Icon"
+msgstr ""
+
+#: inc/options.php:98
+#, php-format
+#@ noise
+msgid "Specify icon for mobile devices and tablets. <a href=\"%s\" target=\"_blank\">Learn more</a>."
+msgstr ""
+
+#: inc/options.php:106
+#@ noise
+msgid "Design"
+msgstr ""
+
+#: inc/options.php:111
+#: inc/options.php:116
+#@ noise
+msgid "Color Scheme"
+msgstr ""
+
+#: inc/options.php:133
+#@ noise
+msgid "Custom Color Scheme"
+msgstr ""
+
+#: inc/options.php:145
+#@ noise
+msgid "Primary Color"
+msgstr ""
+
+#: inc/options.php:151
+#@ noise
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/options.php:156
+#@ noise
+msgid ""
+"<b>Examples (default color schemes):</b><br>\n"
+"\t\t\t\t\t\t\t<i>Orange</i>: <code>#ff8800</code>, <code>#383838</code><br>\n"
+"\t\t\t\t\t\t\t<i>Green</i>: <code>#495745</code>, <code>#383838</code><br>\n"
+"\t\t\t\t\t\t\t<i>Blue</i>: <code>#1145af</code>, <code>#383838</code><br>\n"
+"\t\t\t\t\t\t"
+msgstr ""
+
+#: inc/options.php:169
+#@ noise
+msgid "Background"
+msgstr ""
+
+#: inc/options.php:174
+#@ noise
+msgid "Body Background"
+msgstr ""
+
+#: inc/options.php:176
+#, php-format
+#@ noise
+msgid "A lot of background patterns can be found at <a href=\"%s\" target=\"_blank\">Subtle Patterns</a>."
+msgstr ""
+
+#: inc/options.php:180
+#@ noise
+msgid "Parallax Pattern"
+msgstr ""
+
+#: inc/options.php:182
+#@ noise
+msgid "The transparent pattern displayed over parallax background"
+msgstr ""
+
+#: inc/options.php:186
+#@ noise
+msgid "404 Page Background Image"
+msgstr ""
+
+#: inc/options.php:194
+#: inc/options.php:199
+#@ noise
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/options.php:201
+#@ noise
+msgid "Enter your custom CSS here. This will overwrite theme default CSS."
+msgstr ""
+
+#: inc/options.php:209
+#@ noise
+msgid "Header"
+msgstr ""
+
+#: inc/options.php:213
+#@ noise
+msgid "Logo"
+msgstr ""
+
+#: inc/options.php:215
+#@ noise
+msgid "Specify logo URL or upload, select from Media Library."
+msgstr ""
+
+#: inc/options.php:218
+#@ noise
+msgid "Logo Size (Optional)"
+msgstr ""
+
+#: inc/options.php:219
+#@ noise
+msgid "Best size is 150x60"
+msgstr ""
+
+#: inc/options.php:225
+#@ noise
+msgid "Width"
+msgstr ""
+
+#: inc/options.php:231
+#@ noise
+msgid "Height"
+msgstr ""
+
+#: inc/options.php:248
+#@ noise
+msgid "Header Scripts"
+msgstr ""
+
+#: inc/options.php:250
+#@ noise
+msgid "Enter scripts or code you would like output to <code>&lt;head&gt;</code>. It can be custom font link, meta tags, javascript, etc."
+msgstr ""
+
+#: inc/options.php:258
+#@ noise
+msgid "Onepage Sections"
+msgstr ""
+
+#: inc/options.php:263
+#@ noise
+msgid "Sections Order"
+msgstr ""
+
+#: inc/options.php:268
+#@ noise
+msgid "Order Sections"
+msgstr ""
+
+#: inc/options.php:270
+#@ noise
+msgid "Drag and drop sections to reorder. You can enable/disable each section in it's own setting menu on the left"
+msgstr ""
+
+#: inc/options.php:273
+#@ noise
+msgid "Like And Follow"
+msgstr ""
+
+#: inc/options.php:275
+#: inc/options.php:608
+#: inc/options.php:630
+#@ noise
+msgid "Quotes"
+msgstr ""
+
+#: inc/options.php:277
+#: inc/options.php:693
+#@ noise
+msgid "Latest Tweets"
+msgstr ""
+
+#: inc/options.php:281
+#: inc/options.php:905
+#@ noise
+msgid "Special Event"
+msgstr ""
+
+#: inc/options.php:282
+#: inc/options.php:980
+#: inc/options.php:1008
+#@ noise
+msgid "Artists"
+msgstr ""
+
+#: inc/options.php:287
+#: inc/options.php:1222
+#@ noise
+msgid "Connect"
+msgstr ""
+
+#: inc/options.php:312
+#@ noise
+msgid "Opener"
+msgstr ""
+
+#: inc/options.php:317
+#: inc/options.php:348
+#: inc/options.php:455
+#: inc/options.php:501
+#: inc/options.php:568
+#: inc/options.php:613
+#: inc/options.php:645
+#: inc/options.php:698
+#: inc/options.php:779
+#: inc/options.php:825
+#: inc/options.php:864
+#: inc/options.php:910
+#: inc/options.php:985
+#: inc/options.php:1041
+#: inc/options.php:1079
+#: inc/options.php:1123
+#: inc/options.php:1169
+#: inc/options.php:1227
+#: inc/options.php:1287
+#@ noise
+msgid "Enable"
+msgstr ""
+
+#: inc/options.php:323
+#@ noise
+msgid "Opener Logo"
+msgstr ""
+
+#: inc/options.php:328
+#@ noise
+msgid "Unlock Text"
+msgstr ""
+
+#: inc/options.php:331
+#@ noise
+msgid "Slide To Unlock"
+msgstr ""
+
+#: inc/options.php:343
+#@ noise
+msgid "Top Slider"
+msgstr ""
+
+#: inc/options.php:358
+#@ noise
+msgid "Static Image"
+msgstr ""
+
+#: inc/options.php:359
+#@ noise
+msgid "Images Slider"
+msgstr ""
+
+#: inc/options.php:368
+#@ noise
+msgid "Upload parallax image for fullscreen parallax slider"
+msgstr ""
+
+#: inc/options.php:371
+#: inc/options.php:930
+#@ noise
+msgid "Background Video"
+msgstr ""
+
+#: inc/options.php:378
+#: inc/options.php:935
+#@ noise
+msgid "Video URL"
+msgstr ""
+
+#: inc/options.php:381
+#: inc/options.php:938
+#@ noise
+msgid "Direct video URL and Youtube URL are accepted"
+msgstr ""
+
+#: inc/options.php:385
+#: inc/options.php:942
+#@ noise
+msgid "Alternative Video URL"
+msgstr ""
+
+#: inc/options.php:388
+#: inc/options.php:945
+#@ noise
+msgid "Alternative URL of direct video in other format"
+msgstr ""
+
+#: inc/options.php:393
+#: inc/options.php:950
+#@ noise
+msgid "To make sure video plays on all browsers, you should enter both URLs to the video with formats <code>mp4 (h.264)</code> and <code>webm</code>"
+msgstr ""
+
+#: inc/options.php:429
+#@ noise
+msgid "Please enter text captions for the Top Slider. These captions will be displayed in a slider <b>over</b> image or video background. If you choose \"Image Slider\" above, please enter URLs for each sliding image below."
+msgstr ""
+
+#: inc/options.php:460
+#: inc/options.php:573
+#: inc/options.php:650
+#: inc/options.php:784
+#: inc/options.php:869
+#: inc/options.php:990
+#: inc/options.php:1084
+#: inc/options.php:1174
+#: inc/options.php:1292
+#@ noise
+msgid "Section Title"
+msgstr ""
+
+#: inc/options.php:466
+#: inc/options.php:579
+#: inc/options.php:656
+#: inc/options.php:790
+#: inc/options.php:843
+#: inc/options.php:875
+#: inc/options.php:996
+#: inc/options.php:1090
+#: inc/options.php:1134
+#: inc/options.php:1180
+#: inc/options.php:1298
+#: inc/widgets/featured-tracks.php:177
+#: inc/widgets/recent-posts.php:142
+#: inc/widgets/tabs.php:256
+#@ noise
+msgid "Title"
+msgstr ""
+
+#: inc/options.php:467
+#@ noise
+msgid "New"
+msgstr ""
+
+#: inc/options.php:472
+#: inc/options.php:585
+#: inc/options.php:662
+#: inc/options.php:796
+#: inc/options.php:881
+#: inc/options.php:1002
+#: inc/options.php:1097
+#: inc/options.php:1186
+#: inc/options.php:1303
+#@ noise
+msgid "Suffix"
+msgstr ""
+
+#: inc/options.php:473
+#: inc/options.php:586
+#: inc/options.php:797
+#: inc/options.php:882
+#@ noise
+msgid "s"
+msgstr ""
+
+#: inc/options.php:478
+#: inc/options.php:591
+#: inc/options.php:667
+#: inc/options.php:802
+#: inc/options.php:887
+#: inc/options.php:1007
+#: inc/options.php:1102
+#: inc/options.php:1191
+#: inc/options.php:1308
+#@ noise
+msgid "Subtitle"
+msgstr ""
+
+#: inc/options.php:485
+#: inc/options.php:598
+#: inc/widgets/featured-tracks.php:183
+#@ noise
+msgid "Number Of Tracks"
+msgstr ""
+
+#: inc/options.php:488
+#@ noise
+msgid "Number of latest tracks to be displayed"
+msgstr ""
+
+#: inc/options.php:489
+#: inc/options.php:1215
+#@ noise
+msgid "Enter -1 if you want to display all tracks"
+msgstr ""
+
+#: inc/options.php:512
+#: inc/options.php:1052
+#@ noise
+msgid "Message"
+msgstr ""
+
+#: inc/options.php:514
+#: inc/options.php:1143
+#@ noise
+msgid "Can be written in multiple lines, odd lines will be in larger font size"
+msgstr ""
+
+#: inc/options.php:518
+#@ noise
+msgid "Facebook Like Button"
+msgstr ""
+
+#: inc/options.php:524
+#: inc/options.php:545
+#@ noise
+msgid "Button Label"
+msgstr ""
+
+#: inc/options.php:527
+#@ noise
+msgid "Like this on Facebook"
+msgstr ""
+
+#: inc/options.php:531
+#@ noise
+msgid "Facebook fanpage/group URL"
+msgstr ""
+
+#: inc/options.php:539
+#@ noise
+msgid "Twitter Follow Button"
+msgstr ""
+
+#: inc/options.php:548
+#@ noise
+msgid "Follow us on Twitter"
+msgstr ""
+
+#: inc/options.php:552
+#: inc/options.php:748
+#@ noise
+msgid "Twitter Username"
+msgstr ""
+
+#: inc/options.php:580
+#@ noise
+msgid "The Best"
+msgstr ""
+
+#: inc/options.php:601
+#@ noise
+msgid "Number of popular tracks to be displayed"
+msgstr ""
+
+#: inc/options.php:619
+#: inc/options.php:704
+#@ noise
+msgid "Auto Slide"
+msgstr ""
+
+#: inc/options.php:674
+#@ noise
+msgid "Number Of Photos"
+msgstr ""
+
+#: inc/options.php:677
+#@ noise
+msgid "Number of photo galleris to be displayed"
+msgstr ""
+
+#: inc/options.php:678
+#@ noise
+msgid "Enter -1 if you want to display all photo galleries"
+msgstr ""
+
+#: inc/options.php:682
+#@ noise
+msgid "Number Of Videos"
+msgstr ""
+
+#: inc/options.php:685
+#@ noise
+msgid "Number of video galleries to be displayed"
+msgstr ""
+
+#: inc/options.php:686
+#@ noise
+msgid "Enter -1 if you want to display all video galleries"
+msgstr ""
+
+#: inc/options.php:716
+#@ noise
+msgid "Please go to <a href=\"https://dev.twitter.com/apps\">https://dev.twitter.com/apps</a> and create a new Twitter application to get the following information. See detailed instruction in the <a href=\"http://fitwp.github.io/docs/noise\">documentation</a>."
+msgstr ""
+
+#: inc/options.php:720
+#@ noise
+msgid "Consumer Key"
+msgstr ""
+
+#: inc/options.php:723
+#@ noise
+msgid "Twitter App comsumer key"
+msgstr ""
+
+#: inc/options.php:727
+#@ noise
+msgid "Consumer Secret"
+msgstr ""
+
+#: inc/options.php:730
+#@ noise
+msgid "Twitter App comsumer secret"
+msgstr ""
+
+#: inc/options.php:734
+#@ noise
+msgid "Access Token"
+msgstr ""
+
+#: inc/options.php:737
+#@ noise
+msgid "Twitter App access token"
+msgstr ""
+
+#: inc/options.php:741
+#@ noise
+msgid "Access Token Secret"
+msgstr ""
+
+#: inc/options.php:744
+#@ noise
+msgid "Twitter App token secret"
+msgstr ""
+
+#: inc/options.php:754
+#@ noise
+msgid "Tweets to display"
+msgstr ""
+
+#: inc/options.php:758
+#@ noise
+msgid "Enter number of tweets you want to display"
+msgstr ""
+
+#: inc/options.php:762
+#@ noise
+msgid "Cache Time"
+msgstr ""
+
+#: inc/options.php:766
+#@ noise
+msgid "second"
+msgstr ""
+
+#: inc/options.php:767
+#@ noise
+msgid "Specify number of seconds you want to cache the tweets"
+msgstr ""
+
+#: inc/options.php:791
+#@ noise
+msgid "Release"
+msgstr ""
+
+#: inc/options.php:803
+#@ noise
+msgid "Latest releases"
+msgstr ""
+
+#: inc/options.php:809
+#@ noise
+msgid "Number Of Albums"
+msgstr ""
+
+#: inc/options.php:812
+#@ noise
+msgid "Number of latest albums to be displayed"
+msgstr ""
+
+#: inc/options.php:813
+#@ noise
+msgid "Enter -1 if you want to dispaly all albums"
+msgstr ""
+
+#: inc/options.php:836
+#@ noise
+msgid "Subscribe Form Shortcode"
+msgstr ""
+
+#: inc/options.php:838
+#@ noise
+msgid "Please install a newsletter plugin like <a href=\"https://wordpress.org/plugins/wysija-newsletters/\">MailPoet Newsletters</a> first and enter the shortcode of the subscribe form here. See detailed instruction in the <a href=\"http://fitwp.github.io/docs/noise\">documentation</a>."
+msgstr ""
+
+#: inc/options.php:846
+#@ noise
+msgid "Title of subscribe section"
+msgstr ""
+
+#: inc/options.php:850
+#: inc/options.php:1141
+#@ noise
+msgid "Description"
+msgstr ""
+
+#: inc/options.php:852
+#: inc/options.php:965
+#@ noise
+msgid "Enter the description that display bellow the title"
+msgstr ""
+
+#: inc/options.php:876
+#: inc/post-types.php:88
+#@ noise
+msgid "Event"
+msgstr ""
+
+#: inc/options.php:888
+#@ noise
+msgid "upcoming tours"
+msgstr ""
+
+#: inc/options.php:894
+#@ noise
+msgid "Number Of Events"
+msgstr ""
+
+#: inc/options.php:897
+#@ noise
+msgid "Number of events to be displayed"
+msgstr ""
+
+#: inc/options.php:898
+#@ noise
+msgid "Enter -1 if you want to display all events"
+msgstr ""
+
+#: inc/options.php:354
+#: inc/options.php:916
+#@ noise
+msgid "Background Type"
+msgstr ""
+
+#: inc/options.php:956
+#@ noise
+msgid "Event Title"
+msgstr ""
+
+#: inc/options.php:959
+#@ noise
+msgid "Title of countdown section"
+msgstr ""
+
+#: inc/options.php:963
+#@ noise
+msgid "Event Description"
+msgstr ""
+
+#: inc/options.php:969
+#@ noise
+msgid "End time"
+msgstr ""
+
+#: inc/options.php:973
+#@ noise
+msgid "Enter the time you want to stop counting"
+msgstr ""
+
+#: inc/options.php:997
+#@ noise
+msgid "DJ<span class=\"suffix\">s</span> & Band"
+msgstr ""
+
+#: inc/options.php:1014
+#: inc/options.php:1025
+#@ noise
+msgid "Number Of Artists"
+msgstr ""
+
+#: inc/options.php:1016
+#: inc/widgets/artists.php:115
+#@ noise
+msgid "Choose which artists will be displayed"
+msgstr ""
+
+#: inc/options.php:1019
+#: inc/widgets/artists.php:118
+#@ noise
+msgid "Most recent artists"
+msgstr ""
+
+#: inc/options.php:1020
+#@ noise
+msgid "Featured Artists"
+msgstr ""
+
+#: inc/options.php:1028
+#@ noise
+msgid "Number of artists to be displayed"
+msgstr ""
+
+#: inc/options.php:1029
+#@ noise
+msgid "Enter -1 if you want to display all artists"
+msgstr ""
+
+#: inc/options.php:1036
+#@ noise
+msgid "Blog Section"
+msgstr ""
+
+#: inc/options.php:1054
+#@ noise
+msgid ""
+"News<span class='green-dot'>.</span>\n"
+"Let's read our fresh news and note"
+msgstr ""
+
+#: inc/options.php:1058
+#@ noise
+msgid "Blog URL"
+msgstr ""
+
+#: inc/options.php:1064
+#@ noise
+msgid "Blog Link Anchor Text"
+msgstr ""
+
+#: inc/options.php:1067
+#@ noise
+msgid "Go to blog"
+msgstr ""
+
+#: inc/options.php:1091
+#@ noise
+msgid "Post"
+msgstr ""
+
+#: inc/options.php:1109
+#@ noise
+msgid "Read more text"
+msgstr ""
+
+#: inc/options.php:1111
+#: inc/options.php:1387
+#@ noise
+msgid "Read more"
+msgstr ""
+
+#: inc/options.php:1233
+#@ noise
+msgid "Contact Title"
+msgstr ""
+
+#: inc/options.php:1236
+#@ noise
+msgid "Meet us in person"
+msgstr ""
+
+#: inc/options.php:1240
+#@ noise
+msgid "Contact Information"
+msgstr ""
+
+#: inc/options.php:1242
+#@ noise
+msgid "Enter contact information here"
+msgstr ""
+
+#: inc/options.php:1246
+#@ noise
+msgid "Contact Email"
+msgstr ""
+
+#: inc/options.php:1250
+#@ noise
+msgid "Enter your email to receive emails from visitor"
+msgstr ""
+
+#: inc/options.php:1254
+#@ noise
+msgid "Address"
+msgstr ""
+
+#: inc/options.php:1261
+#@ noise
+msgid "This address will be used for Google Maps"
+msgstr ""
+
+#: inc/options.php:1267
+#@ noise
+msgid "Zoom Level"
+msgstr ""
+
+#: inc/options.php:1274
+#@ noise
+msgid "Social Media"
+msgstr ""
+
+#: inc/options.php:441
+#: inc/options.php:1314
+#@ noise
+msgid "Content"
+msgstr ""
+
+#: inc/options.php:1316
+#@ noise
+msgid "Allow <em>Shortcodes</em>"
+msgstr ""
+
+#: inc/options.php:1328
+#@ noise
+msgid "Blog Layout"
+msgstr ""
+
+#: inc/options.php:1329
+#@ noise
+msgid "Select default layout for blog"
+msgstr ""
+
+#: inc/options.php:1339
+#@ noise
+msgid "Blog Header"
+msgstr ""
+
+#: inc/options.php:1340
+#@ noise
+msgid "Enable or disable blog header. It's the Slider section with different caption that has setting bellow"
+msgstr ""
+
+#: inc/options.php:1350
+#@ noise
+msgid "Welcome to our blog"
+msgstr ""
+
+#: inc/options.php:1357
+#@ noise
+msgid "Display"
+msgstr ""
+
+#: inc/options.php:1360
+#@ noise
+msgid "Post excerpt"
+msgstr ""
+
+#: inc/options.php:1361
+#@ noise
+msgid "Post content"
+msgstr ""
+
+#: inc/options.php:1362
+#@ noise
+msgid "Post content before more tag"
+msgstr ""
+
+#: inc/options.php:1365
+#@ noise
+msgid "Select type of post content will be displayed in blog page."
+msgstr ""
+
+#: inc/options.php:1369
+#@ noise
+msgid "Post Content Limit"
+msgstr ""
+
+#: inc/options.php:1371
+#@ noise
+msgid "words"
+msgstr ""
+
+#: inc/options.php:1373
+#@ noise
+msgid "<strong>Important:</strong> This setting is NOT applied if you select \"Post content before more tag\" above."
+msgstr ""
+
+#: inc/options.php:1377
+#@ noise
+msgid "Read More"
+msgstr ""
+
+#: inc/options.php:1378
+#@ noise
+msgid "Turn on or off read more link"
+msgstr ""
+
+#: inc/options.php:1384
+#@ noise
+msgid "Read More Text"
+msgstr ""
+
+#: inc/options.php:1385
+#@ noise
+msgid "The anchor text for read more link"
+msgstr ""
+
+#: inc/options.php:1394
+#@ noise
+msgid "Pagination"
+msgstr ""
+
+#: inc/options.php:1395
+#@ noise
+msgid "Select type of pagination"
+msgstr ""
+
+#: inc/options.php:1399
+#@ noise
+msgid "Ajax Load"
+msgstr ""
+
+#: inc/options.php:1400
+#@ noise
+msgid "Next and Prev"
+msgstr ""
+
+#: inc/options.php:1401
+#@ noise
+msgid "Numberic Buttons"
+msgstr ""
+
+#: inc/options.php:1433
+#@ noise
+msgid "Footer"
+msgstr ""
+
+#: inc/options.php:1455
+#@ noise
+msgid "Footer Logo"
+msgstr ""
+
+#: inc/options.php:1456
+#@ noise
+msgid "Logo display in front of copyright"
+msgstr ""
+
+#: inc/options.php:1462
+#@ noise
+msgid "Footer Copyright"
+msgstr ""
+
+#: inc/options.php:1463
+#@ noise
+msgid "HTML and Shortcodes are allowed. Available shortcodes: <code>[year]</code>, <code>[bloginfo]</code>, <code>[site_link]</code>"
+msgstr ""
+
+#: inc/options.php:1472
+#@ noise
+msgid "Footer Scripts"
+msgstr ""
+
+#: inc/options.php:1474
+#@ noise
+msgid "Enter scripts or code you would like output before <code>&lt;/body&gt;</code>. It can be Google Analytics code or something else."
+msgstr ""
+
+#: inc/options.php:1482
+#@ noise
+msgid "Backup & Restore"
+msgstr ""
+
+#: inc/options.php:1486
+#@ noise
+msgid "Backup - Restore"
+msgstr ""
+
+#: inc/options.php:1488
+#@ noise
+msgid "You can transfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click \"Import Options\" button above"
+msgstr ""
+
+#: inc/options.php:1509
+#@ noise
+msgid "Documentation"
+msgstr ""
+
+#: inc/options.php:1510
+#@ noise
+msgid "Support"
+msgstr ""
+
+#: inc/post-types.php:14
+#@ noise
+msgctxt "Post Type General Name"
+msgid "Tracks"
+msgstr ""
+
+#: inc/post-types.php:15
+#@ noise
+msgctxt "Post Type Singular Name"
+msgid "Track"
+msgstr ""
+
+#: inc/post-types.php:16
+#@ noise
+msgid "Track"
+msgstr ""
+
+#: inc/post-types.php:17
+#@ noise
+msgid "Parent Track:"
+msgstr ""
+
+#: inc/post-types.php:18
+#@ noise
+msgid "All Tracks"
+msgstr ""
+
+#: inc/post-types.php:19
+#@ noise
+msgid "View Track"
+msgstr ""
+
+#: inc/post-types.php:20
+#@ noise
+msgid "Add New Track"
+msgstr ""
+
+#: inc/post-types.php:21
+#@ noise
+msgid "New Track"
+msgstr ""
+
+#: inc/post-types.php:22
+#@ noise
+msgid "Edit Track"
+msgstr ""
+
+#: inc/post-types.php:23
+#@ noise
+msgid "Update Track"
+msgstr ""
+
+#: inc/post-types.php:24
+#@ noise
+msgid "Search tracks"
+msgstr ""
+
+#: inc/post-types.php:25
+#@ noise
+msgid "No tracks found"
+msgstr ""
+
+#: inc/post-types.php:26
+#@ noise
+msgid "No tracks found in Trash"
+msgstr ""
+
+#: inc/post-types.php:38
+#@ noise
+msgctxt "Post Type General Name"
+msgid "Artists"
+msgstr ""
+
+#: inc/post-types.php:39
+#@ noise
+msgctxt "Post Type Singular Name"
+msgid "Artist"
+msgstr ""
+
+#: inc/post-types.php:41
+#@ noise
+msgid "Parent Artist:"
+msgstr ""
+
+#: inc/post-types.php:42
+#@ noise
+msgid "All Artists"
+msgstr ""
+
+#: inc/post-types.php:43
+#@ noise
+msgid "View Artist"
+msgstr ""
+
+#: inc/post-types.php:44
+#@ noise
+msgid "Add New Artist"
+msgstr ""
+
+#: inc/post-types.php:45
+#@ noise
+msgid "New Artist"
+msgstr ""
+
+#: inc/post-types.php:46
+#@ noise
+msgid "Edit Artist"
+msgstr ""
+
+#: inc/post-types.php:47
+#@ noise
+msgid "Update Artist"
+msgstr ""
+
+#: inc/post-types.php:48
+#@ noise
+msgid "Search artists"
+msgstr ""
+
+#: inc/post-types.php:49
+#@ noise
+msgid "No artists found"
+msgstr ""
+
+#: inc/post-types.php:50
+#@ noise
+msgid "No artists found in Trash"
+msgstr ""
+
+#: inc/post-types.php:62
+#@ noise
+msgctxt "Post Type General Name"
+msgid "Albums"
+msgstr ""
+
+#: inc/post-types.php:63
+#@ noise
+msgctxt "Post Type Singular Name"
+msgid "Album"
+msgstr ""
+
+#: inc/post-types.php:65
+#@ noise
+msgid "Parent Album:"
+msgstr ""
+
+#: inc/post-types.php:66
+#@ noise
+msgid "All Albums"
+msgstr ""
+
+#: inc/post-types.php:67
+#@ noise
+msgid "View Album"
+msgstr ""
+
+#: inc/post-types.php:68
+#@ noise
+msgid "Add New Album"
+msgstr ""
+
+#: inc/post-types.php:69
+#@ noise
+msgid "New Album"
+msgstr ""
+
+#: inc/post-types.php:70
+#@ noise
+msgid "Edit Album"
+msgstr ""
+
+#: inc/post-types.php:71
+#@ noise
+msgid "Update Album"
+msgstr ""
+
+#: inc/post-types.php:72
+#@ noise
+msgid "Search albums"
+msgstr ""
+
+#: inc/post-types.php:73
+#@ noise
+msgid "No albums found"
+msgstr ""
+
+#: inc/post-types.php:74
+#@ noise
+msgid "No albums found in Trash"
+msgstr ""
+
+#: inc/post-types.php:86
+#@ noise
+msgctxt "Post Type General Name"
+msgid "Events"
+msgstr ""
+
+#: inc/post-types.php:87
+#@ noise
+msgctxt "Post Type Singular Name"
+msgid "Event"
+msgstr ""
+
+#: inc/post-types.php:89
+#@ noise
+msgid "Parent Event:"
+msgstr ""
+
+#: inc/post-types.php:90
+#@ noise
+msgid "All Events"
+msgstr ""
+
+#: inc/post-types.php:91
+#@ noise
+msgid "View Event"
+msgstr ""
+
+#: inc/post-types.php:92
+#@ noise
+msgid "Add New Event"
+msgstr ""
+
+#: inc/post-types.php:93
+#@ noise
+msgid "New Event"
+msgstr ""
+
+#: inc/post-types.php:94
+#@ noise
+msgid "Edit Event"
+msgstr ""
+
+#: inc/post-types.php:95
+#@ noise
+msgid "Update Event"
+msgstr ""
+
+#: inc/post-types.php:96
+#@ noise
+msgid "Search events"
+msgstr ""
+
+#: inc/post-types.php:97
+#@ noise
+msgid "No events found"
+msgstr ""
+
+#: inc/post-types.php:98
+#@ noise
+msgid "No events found in Trash"
+msgstr ""
+
+#: inc/post-types.php:110
+#@ noise
+msgctxt "Post Type General Name"
+msgid "Galleries"
+msgstr ""
+
+#: inc/post-types.php:111
+#@ noise
+msgctxt "Post Type Singular Name"
+msgid "Gallery"
+msgstr ""
+
+#: inc/post-types.php:113
+#@ noise
+msgid "Parent Gallery:"
+msgstr ""
+
+#: inc/post-types.php:114
+#@ noise
+msgid "All Galleries"
+msgstr ""
+
+#: inc/post-types.php:115
+#@ noise
+msgid "View Gallery"
+msgstr ""
+
+#: inc/post-types.php:116
+#@ noise
+msgid "Add New Gallery"
+msgstr ""
+
+#: inc/post-types.php:117
+#@ noise
+msgid "New Gallery"
+msgstr ""
+
+#: inc/post-types.php:118
+#@ noise
+msgid "Edit Gallery"
+msgstr ""
+
+#: inc/post-types.php:119
+#@ noise
+msgid "Update Gallery"
+msgstr ""
+
+#: inc/post-types.php:120
+#@ noise
+msgid "Search galleries"
+msgstr ""
+
+#: inc/post-types.php:121
+#@ noise
+msgid "No galleries found"
+msgstr ""
+
+#: inc/post-types.php:122
+#@ noise
+msgid "No galleries found in Trash"
+msgstr ""
+
+#: inc/track.php:72
+#@ noise
+msgid "Album Name :"
+msgstr ""
+
+#: inc/track.php:76
+#@ noise
+msgid "Artist Name :"
+msgstr ""
+
+#: inc/track.php:80
+#@ noise
+msgid "Track Name :"
+msgstr ""
+
+#: inc/track.php:123
+#@ noise
+msgid "Read more on extended player"
+msgstr ""
+
+#: inc/track.php:196
+#: sections/releases.php:59
+#@ noise
+msgid "Album Name"
+msgstr ""
+
+#: inc/track.php:213
+#@ noise
+msgid "Share"
+msgstr ""
+
+#: inc/track.php:223
+#@ noise
+msgid "Lyric is updating"
+msgstr ""
+
+#: inc/track.php:226
+#@ noise
+msgid "Lyric"
+msgstr ""
+
+#: inc/widgets/artists.php:26
+#@ noise
+msgid "Noise - Artists"
+msgstr ""
+
+#: inc/widgets/artists.php:28
+#@ noise
+msgid "Display Artists List"
+msgstr ""
+
+#: inc/widgets/artists.php:109
+#: inc/widgets/tweets.php:112
+#@ noise
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/artists.php:122
+#@ noise
+msgid "Featured artists"
+msgstr ""
+
+#: inc/widgets/artists.php:129
+#@ noise
+msgid "Artists to show"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:24
+#@ noise
+msgid "Featured Tracks"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:36
+#@ noise
+msgid "Noise - Featured Tracks"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:39
+#@ noise
+msgid "Display most featured tracks"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:188
+#@ noise
+msgid "Show Featured Tracks Only"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:193
+#@ noise
+msgid "Show Order Number"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:198
+#: inc/widgets/recent-posts.php:175
+#: inc/widgets/tabs.php:279
+#: inc/widgets/tabs.php:316
+#@ noise
+msgid "Show Thumbnail"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:203
+#@ noise
+msgid "Show Track Artist"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:208
+#@ noise
+msgid "Show Rating"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:213
+#@ noise
+msgid "Rating"
+msgstr ""
+
+#: inc/widgets/featured-tracks.php:216
+#@ noise
+msgid "Order By"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:29
+#@ noise
+msgid "Read More &raquo;"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:34
+#@ noise
+msgid "Noise - Recent Posts"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:37
+#@ noise
+msgid "Advanced recent posts widget."
+msgstr ""
+
+#: inc/widgets/recent-posts.php:93
+#: inc/widgets/tabs.php:139
+#, php-format
+#@ noise
+msgid "%s Comments"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:149
+#: inc/widgets/tabs.php:271
+#: inc/widgets/tabs.php:308
+#@ noise
+msgid "Number Of Posts"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:152
+#@ noise
+msgid "Select Category: "
+msgstr ""
+
+#: inc/widgets/recent-posts.php:154
+#@ noise
+msgid "All"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:171
+#: inc/widgets/tabs.php:275
+#: inc/widgets/tabs.php:312
+#@ noise
+msgid "Show Comment Number"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:183
+#: inc/widgets/tabs.php:287
+#: inc/widgets/tabs.php:324
+#@ noise
+msgid "Show Date"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:187
+#: inc/widgets/tabs.php:291
+#: inc/widgets/tabs.php:328
+#@ noise
+msgid "Date Format"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:192
+#@ noise
+msgid "Show Excerpt"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:196
+#@ noise
+msgid "Excerpt Length (words)"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:200
+#@ noise
+msgid "Show Readmore Text"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:203
+#@ noise
+msgid "Readmore Text:"
+msgstr ""
+
+#: inc/widgets/tabs.php:25
+#@ noise
+msgid "Popular"
+msgstr ""
+
+#: inc/widgets/tabs.php:33
+#@ noise
+msgid "Recent"
+msgstr ""
+
+#: inc/widgets/tabs.php:47
+#@ noise
+msgid "Noise - Tabs"
+msgstr ""
+
+#: inc/widgets/tabs.php:50
+#@ noise
+msgid "Display most popular posts, recent posts, recent comments in tabbed widget."
+msgstr ""
+
+#: inc/widgets/tabs.php:133
+#@ noise
+msgid "by "
+msgstr ""
+
+#: inc/widgets/tabs.php:189
+#@ noise
+msgid "by"
+msgstr ""
+
+#: inc/widgets/tabs.php:191
+#@ noise
+msgid "on"
+msgstr ""
+
+#: inc/widgets/tabs.php:260
+#@ noise
+msgid "Popular Posts"
+msgstr ""
+
+#: inc/widgets/tabs.php:263
+#@ noise
+msgid "Show Popular Tab"
+msgstr ""
+
+#: inc/widgets/tabs.php:266
+#: inc/widgets/tabs.php:302
+#: inc/widgets/tabs.php:339
+#@ noise
+msgid "Label"
+msgstr ""
+
+#: inc/widgets/tabs.php:283
+#: inc/widgets/tabs.php:320
+#@ noise
+msgid "Show Post Author"
+msgstr ""
+
+#: inc/widgets/tabs.php:296
+#@ noise
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/widgets/tabs.php:299
+#: inc/widgets/tabs.php:336
+#@ noise
+msgid "Show Recent Posts Tab"
+msgstr ""
+
+#: inc/widgets/tabs.php:333
+#@ noise
+msgid "Recent Comments"
+msgstr ""
+
+#: inc/widgets/tabs.php:344
+#@ noise
+msgid "Number of comments to show"
+msgstr ""
+
+#: inc/widgets/tweets.php:13
+#@ noise
+msgid "Noise - Tweets"
+msgstr ""
+
+#: inc/widgets/tweets.php:15
+#@ noise
+msgid "Display latest tweets"
+msgstr ""
+
+#: inc/widgets/tweets.php:56
+#: sections/latest-tweets.php:57
+#@ noise
+msgid "ago"
+msgstr ""
+
+#: inc/widgets/tweets.php:117
+#@ noise
+msgid "Tweets to show"
+msgstr ""
+
+#: inc/widgets/tweets.php:122
+#@ noise
+msgid "This widget use settings on"
+msgstr ""
+
+#: inc/widgets/tweets.php:124
+#@ noise
+msgid "Theme option"
+msgstr ""
+
+#: page.php:27
+#: template-fullwidth-page.php:28
+#@ noise
+msgid "Edit This Page"
+msgstr ""
+
+#: search.php:12
+#, php-format
+#@ noise
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:2
+#@ noise
+msgid "Search..."
+msgstr ""
+
+#: sections/artists.php:59
+#@ noise
+msgid "Quick Facts"
+msgstr ""
+
+#: sections/artists.php:83
+#@ noise
+msgid "Birth Date"
+msgstr ""
+
+#: sections/connect.php:37
+#@ noise
+msgid "Drop us a line"
+msgstr ""
+
+#: sections/connect.php:38
+#@ noise
+msgid "Your name"
+msgstr ""
+
+#: sections/connect.php:39
+#@ noise
+msgid "Your mail address"
+msgstr ""
+
+#: sections/connect.php:40
+#@ noise
+msgid "Your message"
+msgstr ""
+
+#: sections/connect.php:41
+#@ noise
+msgid "Submit"
+msgstr ""
+
+#: sections/connect.php:43
+#@ noise
+msgid "Processing..."
+msgstr ""
+
+#: sections/connect.php:44
+#@ noise
+msgid "You must fill all fields"
+msgstr ""
+
+#: sections/connect.php:45
+#@ noise
+msgid "You must enter correct email"
+msgstr ""
+
+#: sections/connect.php:46
+#@ noise
+msgid "We have error while sending your message"
+msgstr ""
+
+#: sections/connect.php:47
+#@ noise
+msgid "Your message has been sent"
+msgstr ""
+
+#: sections/countdown.php:52
+#: template-under-construction.php:35
+#@ noise
+msgid "Months"
+msgstr ""
+
+#: sections/countdown.php:53
+#: template-under-construction.php:36
+#@ noise
+msgid "Days"
+msgstr ""
+
+#: sections/countdown.php:54
+#: template-under-construction.php:37
+#@ noise
+msgid "Hours"
+msgstr ""
+
+#: sections/countdown.php:55
+#: template-under-construction.php:38
+#@ noise
+msgid "Minutes"
+msgstr ""
+
+#: sections/countdown.php:56
+#: template-under-construction.php:39
+#@ noise
+msgid "Seconds "
+msgstr ""
+
+#: sections/events.php:51
+#@ noise
+msgid "Upcoming"
+msgstr ""
+
+#: sections/events.php:52
+#@ noise
+msgid "Past Events"
+msgstr ""
+
+#: sections/events.php:69
+#@ noise
+msgid "Buy Ticket"
+msgstr ""
+
+#: sections/latest-tracks.php:48
+#: sections/popular-tracks.php:50
+#: sections/popular-tracks.php:80
+#: sections/releases.php:137
+#@ noise
+msgid "Play"
+msgstr ""
+
+#: sections/like.php:30
+#@ noise
+msgid "or"
+msgstr ""
+
+#: sections/popular-tracks.php:62
+#: sections/popular-tracks.php:92
+#@ noise
+msgid "Top "
+msgstr ""
+
+#: sections/popular-tracks.php:63
+#@ noise
+msgid "of week"
+msgstr ""
+
+#: sections/popular-tracks.php:93
+#@ noise
+msgid "of month"
+msgstr ""
+
+#: sections/releases.php:47
+#@ noise
+msgid "Number of tracks"
+msgstr ""
+
+#: sections/releases.php:90
+#@ noise
+msgid "Buy Now"
+msgstr ""
+
+#: sections/releases.php:118
+#@ noise
+msgid "Tracklist"
+msgstr ""
+
+#: sections/soundcloud-player.php:4
+#@ noise
+msgid "This track dose not has SoundCloud version"
+msgstr ""
+
+#: sections/video-player.php:4
+#: sections/video-player.php:13
+#@ noise
+msgid "No video available"
+msgstr ""
+
+#: sidebar.php:6
+#@ noise
+msgid "Primary Sidebar"
+msgstr ""
+
+#: sidebar.php:11
+#, php-format
+#@ noise
+msgid "This is the blog sidebar (widget area). Please go to <a href=\"%s\">Appearance &rarr; Widgets</a> to add content to this area"
+msgstr ""
+
+#: single.php:12
+#@ noise
+msgid "Single Post"
+msgstr ""
+
+#: inc/admin/meta-box.php:672
+#@ noise
+msgid "Add to Menu"
+msgstr ""
+
+#: inc/widgets/recent-posts.php:87
+#: inc/widgets/tabs.php:125
+#, php-format
+#@ noise
+msgid "Permalink to %s"
+msgstr ""
+
+#: inc/admin/meta-box.php:297
+#@ noise
+msgid "Allow hide/show download button"
+msgstr ""
+
+#: inc/admin/meta-box.php:301
+#@ noise
+msgid "Hide track in Lastest Tracks section"
+msgstr ""
+
+#: inc/admin/meta-box.php:304
+#@ noise
+msgid "Allow hide track in Lastest Tracks section"
+msgstr ""
+
+#: inc/admin/meta-box.php:647
+#: inc/options.php:285
+#: inc/options.php:1137
+#: inc/options.php:1181
+#: inc/options.php:1410
+#@ noise
+msgid "Shop"
+msgstr ""
+
+#: inc/admin/meta-box.php:648
+#: inc/options.php:286
+#: inc/options.php:1164
+#@ noise
+msgid "Products"
+msgstr ""
+
+#: inc/options.php:21
+#@ noise
+msgid "Preloader"
+msgstr ""
+
+#: inc/options.php:48
+#@ noise
+msgid "Extended Player"
+msgstr ""
+
+#: inc/options.php:51
+#@ noise
+msgid "Allow show/hide extended player"
+msgstr ""
+
+#: inc/options.php:74
+#@ noise
+msgid "Display download button on expanded player. These settings may be overridden for individual tracks"
+msgstr ""
+
+#: inc/options.php:238
+#@ noise
+msgid "Display Cart On Menu"
+msgstr ""
+
+#: inc/options.php:241
+#@ noise
+msgid "Allow display cart icon on menu"
+msgstr ""
+
+#: inc/options.php:400
+#@ noise
+msgid "Auto Play Sound"
+msgstr ""
+
+#: inc/options.php:407
+#@ noise
+msgid "Show Volume Button"
+msgstr ""
+
+#: inc/options.php:414
+#@ noise
+msgid "Overlay Content"
+msgstr ""
+
+#: inc/options.php:418
+#@ noise
+msgid "Text Slider"
+msgstr ""
+
+#: inc/options.php:419
+#@ noise
+msgid "Custom"
+msgstr ""
+
+#: inc/options.php:443
+#@ noise
+msgid "You can insert logo, images or any text here. Shortcodes are allowed."
+msgstr ""
+
+#: inc/options.php:1118
+#@ noise
+msgid "Shop Section"
+msgstr ""
+
+#: inc/options.php:1144
+#@ noise
+msgid ""
+"The best albums\n"
+"From all genres"
+msgstr ""
+
+#: inc/options.php:1148
+#@ noise
+msgid "Shop URL"
+msgstr ""
+
+#: inc/options.php:1154
+#@ noise
+msgid "Shop Link Anchor Text"
+msgstr ""
+
+#: inc/options.php:1157
+#@ noise
+msgid "View the products"
+msgstr ""
+
+#: inc/options.php:1192
+#: inc/options.php:1202
+#@ noise
+msgid "Recent Products"
+msgstr ""
+
+#: inc/options.php:1198
+#@ noise
+msgid "Products to show"
+msgstr ""
+
+#: inc/options.php:1203
+#@ noise
+msgid "Featured Products"
+msgstr ""
+
+#: inc/options.php:1204
+#@ noise
+msgid "Best Selling Products"
+msgstr ""
+
+#: inc/options.php:1205
+#@ noise
+msgid "Top Rated Products"
+msgstr ""
+
+#: inc/options.php:1206
+#@ noise
+msgid "Sale Products"
+msgstr ""
+
+#: inc/options.php:1211
+#@ noise
+msgid "Number of products"
+msgstr ""
+
+#: inc/options.php:1214
+#@ noise
+msgid "Number of latest products to be displayed"
+msgstr ""
+
+#: inc/options.php:1346
+#@ noise
+msgid "Blog Header Caption/Image"
+msgstr ""
+
+#: inc/options.php:1347
+#@ noise
+msgid "Blog header message. If you want to use image for blog header instead of text caption, you can paste link image here "
+msgstr ""
+
+#: inc/options.php:1414
+#@ noise
+msgid "Shop Header"
+msgstr ""
+
+#: inc/options.php:1415
+#@ noise
+msgid "Enable or disable shop header. It's the Slider section with different caption that has setting bellow"
+msgstr ""
+
+#: inc/options.php:1421
+#@ noise
+msgid "Shop Header Caption/Image"
+msgstr ""
+
+#: inc/options.php:1422
+#@ noise
+msgid "Shop header message. If you want to use image for shop header instead of text caption, you can paste link image here"
+msgstr ""
+
+#: inc/options.php:1425
+#@ noise
+msgid "Welcome to our Shop"
+msgstr ""
+
+#: inc/woocommerce.php:13
+#@ noise
+msgid "Sale"
+msgstr ""
+
+#: inc/frontend/frontend.php:180
+#: inc/woocommerce.php:128
+#@ noise
+msgid "View your shopping cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:26
+#@ woocommerce
+msgid "Product Details"
+msgstr ""
+
+#: woocommerce/cart/cart.php:27
+#@ woocommerce
+msgid "Product Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:28
+#@ woocommerce
+msgid "Item Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:29
+#@ woocommerce
+msgid "Total Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:43
+#@ woocommerce
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:70
+#@ woocommerce
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:116
+#@ woocommerce
+msgid "Enter Coupon Code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:116
+#@ woocommerce
+msgid "Subcribe"
+msgstr ""
+
+#: woocommerce/cart/cart.php:123
+#@ woocommerce
+msgid "Update Cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:123
+#@ woocommerce
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: footer.php:14
+#, php-format
+#@ glamo
+msgid "This is the Footer Sidebar %s (widget area). Please go to <a href=\"%s\">Appearance &rarr; Widgets</a> to add widgets to this area"
+msgstr ""
+
+#: functions.php:76
+#@ noise
+msgid "Footer Sidebar 1"
+msgstr ""
+
+#: functions.php:77
+#@ noise
+msgid "Footer Sidebar 2"
+msgstr ""
+
+#: functions.php:78
+#@ noise
+msgid "Footer Sidebar 3"
+msgstr ""
+
+#: functions.php:79
+#@ noise
+msgid "Footer Sidebar 4"
+msgstr ""
+
+#: inc/admin/meta-box.php:128
+#@ noise
+msgid "Page Setting"
+msgstr ""
+
+#: inc/admin/meta-box.php:134
+#@ noise
+msgid "Hide Page Title"
+msgstr ""
+
+#: inc/admin/meta-box.php:135
+#@ noise
+msgid "Hide this page title in the frontend"
+msgstr ""
+
+#: inc/admin/meta-box.php:140
+#@ noise
+msgid "Show map"
+msgstr ""
+
+#: inc/admin/meta-box.php:141
+#@ noise
+msgid "Show map at the bottom of page"
+msgstr ""
+
+#: inc/admin/meta-box.php:270
+#@ noise
+msgid "Homepage Link "
+msgstr ""
+
+#: inc/options.php:1437
+#@ noise
+msgid "Footer Columns"
+msgstr ""
+
+#: inc/options.php:1440
+#@ noise
+msgid "Enable on/off footer columns style"
+msgstr ""
+

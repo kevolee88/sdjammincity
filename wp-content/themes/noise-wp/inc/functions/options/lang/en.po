@@ -1,0 +1,194 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FitWP Options 1.0\n"
+"POT-Creation-Date: 2013-12-19 01:34+0700\n"
+"PO-Revision-Date: 2013-12-19 01:34+0700\n"
+"Last-Translator: \n"
+"Language-Team: FitWP <info@fitwp.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../inc/admin.php:35
+msgid "Theme Options"
+msgstr ""
+
+#: ../inc/admin.php:57
+msgid "This action can't be undo. Are you sure want to reset?"
+msgstr ""
+
+#: ../inc/admin.php:58
+msgid "All previous options will be overwritten.  Are you sure want to import?"
+msgstr ""
+
+#: ../inc/admin.php:59
+msgid "Select Image"
+msgstr ""
+
+#: ../inc/fields.php:233
+msgid "Select"
+msgstr ""
+
+#: ../inc/fields.php:487
+msgid "Add Sidebar"
+msgstr ""
+
+#: ../inc/fields.php:579
+msgid "Color"
+msgstr ""
+
+#: ../inc/fields.php:584
+msgid "Image"
+msgstr ""
+
+#: ../inc/fields.php:591
+msgid "Position X"
+msgstr ""
+
+#: ../inc/fields.php:593
+msgid "Left"
+msgstr ""
+
+#: ../inc/fields.php:594 ../inc/fields.php:604
+msgid "Center"
+msgstr ""
+
+#: ../inc/fields.php:595
+msgid "Right"
+msgstr ""
+
+#: ../inc/fields.php:601
+msgid "Position Y"
+msgstr ""
+
+#: ../inc/fields.php:603
+msgid "Top"
+msgstr ""
+
+#: ../inc/fields.php:605
+msgid "Bottom"
+msgstr ""
+
+#: ../inc/fields.php:613 ../inc/fields.php:615
+msgid "Repeat"
+msgstr ""
+
+#: ../inc/fields.php:616
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: ../inc/fields.php:617
+msgid "Repeat Vertically"
+msgstr ""
+
+#: ../inc/fields.php:618
+msgid "No Repeat"
+msgstr ""
+
+#: ../inc/fields.php:624
+msgid "Attachment"
+msgstr ""
+
+#: ../inc/fields.php:626
+msgid "Scroll"
+msgstr ""
+
+#: ../inc/fields.php:627
+msgid "Fixed"
+msgstr ""
+
+#: ../inc/fields.php:646
+msgid "Facebook URL"
+msgstr ""
+
+#: ../inc/fields.php:647
+msgid "Twitter URL"
+msgstr ""
+
+#: ../inc/fields.php:648
+msgid "Flickr URL"
+msgstr ""
+
+#: ../inc/fields.php:649
+msgid "Vimeo URL"
+msgstr ""
+
+#: ../inc/fields.php:650
+msgid "Google Plus URL"
+msgstr ""
+
+#: ../inc/fields.php:651
+msgid "LinkedIn URL"
+msgstr ""
+
+#: ../inc/fields.php:652
+msgid "Pinterest URL"
+msgstr ""
+
+#: ../inc/fields.php:653
+msgid "Skype ID"
+msgstr ""
+
+#: ../inc/fields.php:654
+msgid "Yahoo ID"
+msgstr ""
+
+#: ../inc/fields.php:655
+msgid "Youtube URL"
+msgstr ""
+
+#: ../inc/fields.php:656
+msgid "Behance URL"
+msgstr ""
+
+#: ../inc/fields.php:657
+msgid "Dribbble URL"
+msgstr ""
+
+#: ../inc/fields.php:658
+msgid "DeviantArt URL"
+msgstr ""
+
+#: ../inc/fields.php:659
+msgid "SoundCloud URL"
+msgstr ""
+
+#: ../inc/fields.php:660
+msgid "GitHub URL"
+msgstr ""
+
+#: ../inc/fields.php:661
+msgid "Instagram URL"
+msgstr ""
+
+#: ../inc/fields.php:662
+msgid "MySpace URL"
+msgstr ""
+
+#: ../inc/fields.php:663
+msgid "Tumblr URL"
+msgstr ""
+
+#: ../inc/fields.php:751
+msgid "Import Options"
+msgstr ""
+
+#: ../inc/page.php:48 ../inc/page.php:91
+msgid "Reset Options"
+msgstr ""
+
+#: ../inc/page.php:49 ../inc/page.php:92
+msgid "Save Changes"
+msgstr ""
+
+#: ../inc/page.php:59
+#, php-format
+msgid "By <a href=\"%s\" target=\"_blank\">%s</a>"
+msgstr ""

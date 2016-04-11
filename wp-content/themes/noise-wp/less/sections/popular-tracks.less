@@ -1,0 +1,119 @@
+.section-popular-tracks {
+	@tracks-bg-color: #dcdcdc;
+	.clearfix;
+
+	.popular-tracks {
+		.col6;
+		border: 10px solid @border-box;
+		background-color: @tracks-bg-color;
+	}
+	.top-week {
+		margin-left: 0;
+	}
+	.block-title {
+		.section-title;
+		font-size: 45px;
+		text-align: center;
+		padding: 15px 0;
+		margin: 0;
+		background-color: @text-box-color;
+
+		.suffix {
+			font-size: 22px;
+			margin-left: 0;
+		}
+	}
+	.tracks {
+		padding: 0 20px;
+	}
+	.track {
+		font-size: 14px;
+		text-transform: uppercase;
+		line-height: 1;
+		color: @border-box;
+		clear: both;
+		overflow: hidden;
+		padding: 25px 0;
+		border-bottom: 1px solid rgb(210, 210, 210);
+
+		&:last-child {
+			border: 0px;
+		}
+	}
+	.track-no,
+	.track-title,
+	.track-image {
+		float: left;
+		margin: 12px 0;
+	}
+	.track-no {
+		width: 50px;
+		border-right: 2px solid @border-box; 
+		font-size: 50px;
+		text-align: center;
+	}
+	.track-title {
+		width: 300px;
+		padding: 0 20px;
+		overflow: hidden;
+
+		h3 {
+			margin: 0 0 5px 0;
+			color: @text-box-color;
+			font-size: 28px;
+			font-weight: 400;
+
+			a {
+				color: @text-box-color;
+				text-decoration: none;
+			}
+			.artist-name {
+				display: block;
+			}
+		}
+	}
+	.track-image {
+		width: 80px;
+		height: 80px;
+		margin: 0;
+		text-align: center;
+		position: relative;
+		border: 5px solid @border-box;
+		background-color: @border-box;
+
+		img {
+			max-height: 100%;
+		}
+		.play-track {
+			.transition(all 0.5s ease-in);
+			.opacity(0);
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 15px 0;
+			background-color: rgba(73,87,69,0.8);
+			&:before {
+				color: @text-color;
+				font-size: 40px;
+			}
+			&:hover {
+				.opacity(100);
+			}
+		}
+	}
+	.track-vote {
+		float: right;
+		width: 80px;
+		margin-top: 12px;
+		text-align: center;
+
+		.icon {
+			font-size: 20px;
+			color: @text-box-color;
+			display: block;
+			margin-bottom: 15px;
+		}
+	}
+}

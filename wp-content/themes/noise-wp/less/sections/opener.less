@@ -1,0 +1,77 @@
+body.opener {
+	overflow: hidden;
+}
+.section-opener {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 9999;
+	width: 100%;
+	padding: 0;
+	background: @border-box no-repeat center top;
+	background-size: cover;
+
+	.logo {
+		text-indent: -9999px;
+		width: 387px;
+		height: 150px;
+		margin: 15% auto 40px;
+		position: relative;
+		top: 40%;
+		background: url(img/logo-opener.png) no-repeat center center;
+	}
+
+	.unlocker {
+		width: 387px;
+		height: 50px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 18px;
+		line-height: 50px;
+
+		.bg {
+			.opacity(30);
+			position: absolute;
+			width: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			background-color: @border-box;
+		}
+		.handle {
+			z-index: 10000;
+			cursor: pointer;
+			width: 100%;
+			height: 50px;
+			position: absolute;
+			margin-left: -337px;
+			background: @text-box-color;
+
+			.arrow {
+				.transition(all 0.5s ease-in);
+				font-size: 25px;
+				line-height: 50px;
+				font-weight: 300;
+				width: 50px;
+				height: 50px;
+				float: right;
+				background-color: @border-box;
+			}
+			&:hover .arrow,
+			&.ui-draggable-dragging .arrow {
+				background-color: @text-color;
+				color: @text-box-color;
+			}
+		}
+		.unlockdesc {
+			width: 100%;
+			height: 50px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
