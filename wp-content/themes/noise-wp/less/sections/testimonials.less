@@ -1,0 +1,71 @@
+.section-testimonials {
+	position: relative;
+	min-height: 600px;
+	padding: 150px 0 40px 0;
+	background-position: center top;
+}
+.quotes-slider {
+	margin: 0 0 100px 0;
+
+	.flex-control-nav {
+		bottom: -100px;
+	}
+	.slides{
+		margin: 0px 0 60px;
+
+		li{
+			padding: 50px 0px 10px;
+			text-align: center;
+			position: relative;
+			background: rgba(0, 0, 0, 0.2);
+		}
+	}
+	.quote{
+		width: 6*@col-width + 5*30;
+		min-height: 90px;
+		margin: 0 auto;
+		font-size: 30px;
+		font-weight: 300;
+		text-transform: uppercase;
+
+		a {
+			.transition(all 0.5s ease-in);
+			color: @border-box;
+
+			&:hover {
+				color: @text-box-color;
+			}
+		}
+	}
+	.quote-author,
+	.created-time {
+		font-size: 22px;
+		color:@text-box-color;
+		text-transform: uppercase;
+		line-height: 40px;
+		display: inline-block;
+		position: relative;
+		bottom: -50px;
+		padding: 0 20px;
+		height: 40px;
+		background-color: #dcdcdc;
+	}
+	.cover-icon {
+		font-size: 120px;
+		color: @border-box;
+		line-height: 1;
+		height: 40px;
+		width: 40px;
+		margin: 0 auto -16px;
+
+		&:before {
+			font-size: 60px;
+		}
+	}
+	.twitter-cover-icon {
+		width: 60px;
+		height: 60px;
+		font-size: 60px;
+		margin-bottom: -30px;
+	}
+}

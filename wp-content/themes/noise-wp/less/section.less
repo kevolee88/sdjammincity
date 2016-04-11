@@ -1,0 +1,75 @@
+.section {
+	clear: both;
+	padding: 50px 0;
+	position: relative;
+}
+
+.section-title {
+	font-family: Oswald, sans-serif;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 1;
+	text-transform: uppercase;
+	color: @text-color;
+	position: relative;
+	margin: 0 0 50px 0;
+
+	.suffix,
+	.desc {
+		.inline-block;
+		font-size: 26px;
+		line-height: 1;
+		position: relative;
+	}
+	.desc {
+		position: absolute;
+		top: 3px;
+		margin-left: 15px;
+		color: @text-box-color;
+	}
+}
+
+.parallax,
+.section-mark {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	background-position: 50% 0;
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+
+	.mobile & {
+		background-attachment: scroll;
+	}
+}
+.parallax {
+	background-size: cover;
+}
+.section-mark {
+	background-image: url(img/overlay.png);
+	background-color: rgba(0,0,0,0.2);
+	background-repeat: repeat;
+}
+.section-content {
+	position: relative;
+}
+
+@import 'sections/opener';
+@import 'sections/slider';
+@import 'sections/menu';
+@import 'sections/player';
+@import 'sections/like';
+@import 'sections/popular-tracks';
+@import 'sections/testimonials';
+@import 'sections/media';
+@import 'sections/latest-tweets';
+@import 'sections/releases';
+@import 'sections/subscribe';
+@import 'sections/events';
+@import 'sections/countdown';
+@import 'sections/artists';
+@import 'sections/blog';
+@import 'sections/latest-news';
+@import 'sections/connect';
+@import 'sections/shop';

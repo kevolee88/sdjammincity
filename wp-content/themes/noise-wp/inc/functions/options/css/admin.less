@@ -1,0 +1,175 @@
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+.left {
+	float: left;
+}
+.left {
+	float: right;
+}
+
+@import 'variables';
+@import 'icon';
+@import 'menu';
+@import 'fields';
+
+// General
+#adminmenuback {
+	z-index: 0;
+}
+#wpwrap {
+	background: url(../img/bg.jpg) center top;
+}
+
+// Use as a namespace
+#theme-options {
+	border-radius: 3px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	background-color: #f0f0f0;
+	margin: 60px 20px 20px 20px;
+	position: relative;
+
+	#menuback {
+		border-radius: 3px 0 0 3px;
+		width: 220px;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		background: #25272d url(../img/menubg.gif);
+	}
+	#menu {
+		width: 220px;
+		padding: 80px 0 20px 0;
+		float: left;
+		list-style: none;
+		position: relative;
+	}
+	#content {
+		margin-left: 220px;
+		position: relative;
+	}
+
+	// Ajax loading
+	#overlay {
+		background: #000;
+		opacity: 0.3;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	#indicator {
+		background: #fff url(../img/indicator.gif) no-repeat center center;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 48px;
+		height: 48px;
+		margin-left: -24px;
+		margin-top: -24px;
+		border-radius: 10px;
+	}
+	.ajax-processing {
+		float: right;
+		width: 20px;
+		height: 30px;
+		margin-right: 10px;
+		background: url(../img/loading.GIF) no-repeat center center;
+		display: none;
+
+		&.left {
+			float: left;
+			margin-left: 10px;
+		}
+	}
+
+	// Header
+	.options-header {
+		padding: 15px 0 0 15px;
+
+		h1 {
+			color: #373737;
+			font-size: 24px;
+			font-weight: normal;
+			display: inline-block;
+			margin: 0 5px 5px 0;
+		}
+
+		.version {
+			color: #cacaca;
+			font-size: 11px;
+		}
+		.links {
+			color: #858585;
+			font-size: 12px;
+
+			a,
+			a:visited {
+				color: #858585;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	// Section
+	.section {
+		box-sizing: border-box;
+		padding: 5px 25px 25px;
+		margin-bottom: 60px;
+		display: none;
+		float: left;
+		width: 100%;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	// Toolbar
+	.toolbar {
+		border-radius: 0 5px 0 0;
+		height: 60px;
+		padding: 10px 0;
+		border-bottom: 1px solid #dedede;
+		background-color: #fafafa;
+		position: relative;
+
+		&.bottom {
+			border-radius: 0;
+			border-top: 1px solid #dedede;
+			border-bottom: none;
+			background: none;
+			padding: 15px 0;
+			margin: 0 20px;
+			overflow: hidden;
+			clear: both;
+		}
+
+		// Buttons
+		.button {
+			display: inline-block;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin: 15px 15px 0 0;
+		}
+		.save-options,
+		.reset-options {
+			float: right;
+		}
+
+		.ajax-processing {
+			margin-top: 15px;
+		}
+	}
+}

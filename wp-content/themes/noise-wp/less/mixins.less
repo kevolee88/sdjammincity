@@ -1,0 +1,1396 @@
+// Box sizing
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+	 -moz-box-sizing: @boxmodel;
+		  box-sizing: @boxmodel;
+}
+
+// Opacity
+.opacity(@opacity) {
+	opacity: @opacity / 100;
+	filter: ~"alpha(opacity=@{opacity})";
+}
+
+// Drop shadows
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+	-webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+	-moz-box-shadow: @shadow;
+	-o-box-shadow: @shadow;
+	box-shadow: @shadow;
+}
+
+// Border Radius
+.border-radius(@radius) {
+	#border-radius > .all(@radius);
+}
+
+#border-radius {
+	.all(@radius) {
+		-webkit-border-radius: @radius;
+		   -moz-border-radius: @radius;
+				border-radius: @radius;
+	}
+
+	// Single Corner Border Radius
+	.top-left(@radius) {
+		-webkit-border-top-left-radius: @radius;
+			-moz-border-radius-topleft: @radius;
+				border-top-left-radius: @radius;
+	}
+	.top-right(@radius) {
+		-webkit-border-top-right-radius: @radius;
+			-moz-border-radius-topright: @radius;
+				border-top-right-radius: @radius;
+	}
+	.bottom-right(@radius) {
+		-webkit-border-bottom-right-radius: @radius;
+			-moz-border-radius-bottomright: @radius;
+				border-bottom-right-radius: @radius;
+	}
+	.bottom-left(@radius) {
+		-webkit-border-bottom-left-radius: @radius;
+			-moz-border-radius-bottomleft: @radius;
+				border-bottom-left-radius: @radius;
+	}
+
+	// Single Side Border Radius
+	.top(@radius) {
+		#border-radius > .top-left(@radius);
+		#border-radius > .top-right(@radius);
+	}
+	.right(@radius) {
+		#border-radius > .top-right(@radius);
+		#border-radius > .bottom-right(@radius);
+	}
+	.bottom(@radius) {
+		#border-radius > .bottom-right(@radius);
+		#border-radius > .bottom-left(@radius);
+	}
+	.left(@radius) {
+		#border-radius > .top-left(@radius);
+		#border-radius > .bottom-left(@radius);
+	}
+}
+
+// Gradients
+#gradient {
+	.horizontal(@startColor: #555, @endColor: #333) {
+		background-color: @endColor;
+		background-image: -moz-linear-gradient(left, @startColor, @endColor); // FF 3.6+
+		background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(left, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(left, @startColor, @endColor); // Opera 11.10
+		background-image: linear-gradient(to right, @startColor, @endColor); // Standard, IE10
+		background-repeat: repeat-x;
+		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",argb(@startColor),argb(@endColor))); // IE9 and down
+	}
+	.vertical(@startColor: #555, @endColor: #333) {
+		background-color: @startColor;
+		background-image: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(top, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(top, @startColor, @endColor); // Opera 11.10
+		background-image: linear-gradient(to bottom, @startColor, @endColor); // Standard, IE10
+		background-repeat: repeat-x;
+		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@startColor),argb(@endColor))); // IE9 and down
+	}
+	.directional(@startColor: #555, @endColor: #333, @deg: 45deg) {
+		background-color: @endColor;
+		background-repeat: repeat-x;
+		background-image: -moz-linear-gradient(@deg, @startColor, @endColor); // FF 3.6+
+		background-image: -webkit-linear-gradient(@deg, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(@deg, @startColor, @endColor); // Opera 11.10
+		background-image: linear-gradient(@deg, @startColor, @endColor); // Standard, IE10
+	}
+	.vertical-three-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+		background-color: mix(@midColor, @endColor, 80%);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), color-stop(@colorStop, @midColor), to(@endColor));
+		background-image: -webkit-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+		background-image: -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
+		background-image: -o-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+		background-image: linear-gradient(@startColor, @midColor @colorStop, @endColor);
+		background-repeat: no-repeat;
+		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@startColor),argb(@endColor))); // IE9 and down, gets no color-stop at all for proper fallback
+	}
+	.radial(@innerColor: #555, @outerColor: #333) {
+		background-color: @outerColor;
+		background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(@innerColor), to(@outerColor));
+		background-image: -webkit-radial-gradient(circle, @innerColor, @outerColor);
+		background-image: -moz-radial-gradient(circle, @innerColor, @outerColor);
+		background-image: -o-radial-gradient(circle, @innerColor, @outerColor);
+		background-repeat: no-repeat;
+	}
+	.striped(@color: #555, @angle: 45deg) {
+		background-color: @color;
+		background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
+		background-image: -webkit-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+		background-image: -moz-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+		background-image: -o-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+		background-image: linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	}
+}
+
+.appearance(@appearance) {
+	-webkit-appearance: @appearance;
+	-moz-appearance: @appearance;
+	appearance: @appearance;
+}
+
+.text-shadow( @shadow: 0 1px 3px #333 ) {
+	-webkit-text-shadow: @shadow;
+	-moz-text-shadow: @shadow;
+	-o-text-shadow: @shadow;
+	text-shadow: @shadow;
+}
+
+.transition(@transition) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}
+
+.transition-delay(@transition-delay) {
+	-webkit-transition-delay: @transition-delay;
+	-moz-transition-delay: @transition-delay;
+	-o-transition-delay: @transition-delay;
+	transition-delay: @transition-delay;
+}
+
+.transition-duration(@transition-duration) {
+	-webkit-transition-duration: @transition-duration;
+	-moz-transition-duration: @transition-duration;
+	-o-transition-duration: @transition-duration;
+	transition-duration: @transition-duration;
+}
+
+.transform(...) {
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-o-transform: @arguments;
+	-ms-transform: @arguments;
+	transform: @arguments;
+}
+
+.rotate(@deg:5deg){
+	.transform(rotate(@deg));
+}
+
+.animation( @arguments ) {
+	-webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    -ms-animation: @arguments;
+    -o-animation: @arguments;
+    animation: @arguments;
+}
+
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-ms-keyframes spin {
+    to { -ms-transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+    to { -o-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.color-scheme(@color1, @color2) {
+	body,
+	#load-screen { background-color: @color2; }
+
+	a:hover { color: @color1; }
+	blockquote { color: @color2; border-color: @color1; }
+	table { border-color: @color2; }
+	input[type=submit] {
+		background-color: @color2;
+		&:hover { background-color: @color1; }
+	}
+
+	.green-dot { color: @color1 !important; }
+	.dark-dot { color: @color2 !important; }
+	.overlay { background-color: @color1; }
+	.message { color: @color2; }
+
+	.tabs {
+		.tabs-nav {
+			a {
+				color: @color1;
+				background-color: @color1;
+
+				&.active {
+					color: @text-color;
+					background-color: @color2;
+				}
+			}
+		}
+		&.simple-tabs {
+			.tabs-nav {
+				a {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+
+	body.error404 {
+		.heading-404 span { color: @color1; }
+		.return-home {
+			background-color: @color2;
+
+			&:hover { background-color: @color1 }
+		}
+	}
+
+	.under-construction {
+		i {
+			color: @color2;
+		}
+	}
+
+	// Colorbox
+	#cboxLoadedContent {
+		border-color: @color2;
+	}
+	#cboxClose {
+		background-color: @color2;
+
+		&:hover {
+			color: @color1;
+		}
+	}
+
+	// Sections
+	.section-title .desc { color: @color1; }
+
+	// Section Opener
+	.section-opener {
+		background-color: @color2;
+
+		.unlocker {
+			.handle {
+				background-color: @color1;
+
+				.arrow {
+					background-color: @color2;
+				}
+				&:hover .arrow,
+				&.ui-draggable-dragging .arrow {
+					color: @color1;
+				}
+			}
+		}
+	}
+	// Section Slider
+	.section-slider {
+		.caption {
+			color: @color1;
+			border-color: @color1;
+		}
+	}
+	.vertical-slider {
+		.flex-direction-nav {
+			a {
+				background-color: @color2;
+
+				&:hover {
+					color: @text-color;
+					background-color: @color1;
+				}
+				&.disable,
+				&.flex-disabled {
+					&:hover {
+						color: #444;
+						background-color: @color2;
+					}
+				}
+			}
+		}
+	}
+	.flex-direction-nav a {
+		color: @color1;
+	}
+	input.qty {
+		background-color: @color1;
+	}
+	// Section shop
+	.section-shop {
+		.shop-title, a {
+			color: @color1;
+		}
+		a:hover {
+			color: @color2;
+		}
+	}
+	// Menu
+	.nav-menu {
+		.menu {
+			a {
+				color: @color2;
+
+				&:hover,
+				&:active {
+					color: @color1;
+				}
+			}
+			li.active .current {
+				color: @color1;
+			}
+			.active {
+				color: @color1;
+			}
+		}
+		.mobile-nav {
+			i {
+				color: @color2;
+			}
+		}
+		.player-icon {
+			background-color: @color1;
+		}
+	}
+
+	// Player
+	.mejs-container {
+		background-color: @color1;
+	}
+	.mejs-loop,
+	.mejs-shuffle {
+		color: @color2;
+	}
+	.mejs-prev,
+	.mejs-volume-button,
+	.mejs-info,
+	.mejs-minimize,
+	.mejs-fullscreen-button {
+		border-color: darken(@color1, 5%);
+	}
+	.mejs-rating .vote-ui {
+		background-color: @color1;
+	}
+	.mejs-time-rail {
+		.mejs-time-total {
+			background: @color2;
+		}
+	}
+	.mejs-horizontal-volume-handle {
+		background-color: @color2;
+	}
+	.mejs-horizontal-volume-total {
+		background-color: @color2;
+	}
+	.player-playshuffle,
+	.player-playloop {
+		color: @color2;
+
+		&.active {
+			color: @text-color;
+		}
+	}
+	.track-info .artist-info img {
+		border-color: @color2;
+	}
+	.track-rating {
+		color: @color1;
+	}
+	.links {
+		background-color: @color2;
+
+		a:hover {
+			color: @text-color;
+			background-color: @color1;
+		}
+	}
+	.track-links-extended {
+		background-color: @color2;
+	}
+	.go-extended {
+		a:hover {
+			color: @text-color;
+			background-color: @color1;
+		}
+	}
+	.track-detail {
+		.detail,
+		&.album .detail,
+		&.track .detail {
+			color: @color1;
+		}
+	}
+	.extended-player {
+		.mejs-loop,
+		.mejs-shuffle {
+			color: @text-color;
+
+			&.active {
+				color: @color2;
+			}
+		}
+	}
+	.track-visual {
+		color: @color2;
+		border-color: @color2;
+
+		.image {
+			.caption {
+				.text {
+					border-color: @color1;
+				}
+				.big,
+				.small {
+					color: @color1;
+				}
+			}
+		}
+		.track-data {
+			p span {
+				color: @color1;
+			}
+		}
+		.links {
+			a.button:hover {
+				color: @color1;
+			}
+			&:hover span.button {
+				background-color: @color1;
+			}
+		}
+		.details {
+			.label {
+				color: @color2;
+			}
+		}
+		.track-rating .views {
+			color: @color2;
+		}
+		.track-lyric .label {
+			color: @color1;
+		}
+	}
+	// Section Like
+	.section-like .middle-area {
+		background-color: @color1;
+	}
+	// Media Slider
+	.media-slider {
+		.hentry {
+			border-color: @color2;
+
+			h3 {
+				color: @color1;
+
+				.media-count {
+					color: @color2;
+				}
+			}
+		}
+		.play-track,
+		.view-media {
+			color: @text-color;
+		}
+	}
+	.images-gallery-bottom {
+		background-color: @color2;
+	}
+	.images-gallery-paginate {
+		.current-slide {
+			color: @color1;
+		}
+	}
+	// Section Poupular Tracks
+	.section-popular-tracks {
+		.popular-tracks {
+			border-color: @color2;
+		}
+		.block-title {
+			background-color: @color1;
+		}
+		.track {
+			color: @color2;
+		}
+		.track-title h3 {
+			color: @color1;
+
+			a {
+				color: @color1;
+			}
+		}
+		.track-no {
+			border-color: @color2;
+		}
+		.track-image {
+			border-color: @color2;
+			background-color: @color2;
+
+			.play-track {
+				color: @text-color;
+				background-color: rgba(red(@color1), green(@color1), blue(@color1), 0.8);
+			}
+		}
+		.track-vote .icon {
+			color: @color1;
+		}
+	}
+	// Section Testimonial
+	.quotes-slider {
+		.quote {
+			a {
+				color: @color2;
+
+				&:hover {
+					color: @color1;
+				}
+			}
+		}
+		.quote-author,
+		.created-time {
+			color:@color1;
+		}
+		.cover-icon { color: @color2; }
+	}
+	// Section Release
+	.releases-slider {
+		background-color: @color2;
+
+		.album-share {
+			background-color: @color2
+		}
+		.hide-detail {
+			background-color: @color2;
+
+			&:hover {
+				background-color: @color1;
+			}
+		}
+		&.item-expanded {
+			.flex-direction-nav {
+				a {
+					&:hover {
+						color: @color1;
+						background-color: transparent;
+					}
+					&.flex-disabled:hover {
+						color: @border-box;
+					}
+				}
+			}
+		}
+	}
+	.album-cover {
+		.short-info {
+			color: @color1;
+		}
+		.num-tracks span {
+			color: @color2;
+		}
+		.view-detail,
+		.play-album {
+			color: @text-color;
+		}
+	}
+	.album {
+		color: @color2;
+
+		.info {
+			span {
+				color: @color1;
+				&.label {
+					color: @color2;
+				}
+			}
+		}
+		.album-sources {
+			background-color: @color2;
+
+			a.button:hover {
+				color: @color1;
+			}
+			&:hover {
+				span.button {
+					background-color: @color1;
+				}
+			}
+		}
+		.album-tracks {
+			.label {
+				color: @color1;
+			}
+		}
+		.tracklist {
+			li {
+				&.playing {
+					color: @color2;
+
+					.track-name {
+						color: @color1;
+					}
+				}
+			}
+			p {
+				color: @color2;
+			}
+			.track-name {
+				color: @border-box;
+			}
+			.actions {
+				span:hover {
+					color: @color1;
+				}
+				a {
+					color: @color2;
+					&:hover {
+						color: @color1;
+					}
+				}
+			}
+			.vote-score span {
+				color: @color1;
+			}
+		}
+	}
+	.sharrre {
+		color: @color2;
+	}
+	.mCSB_scrollTools {
+		a {
+			color: @color2;
+			&:hover {
+				color: @color1;
+			}
+		}
+	}
+	.custom-scroll-nav {
+		span {
+			color: @color2;
+			&:hover {
+				color: @color1;
+			}
+		}
+	}
+	// Section Subscription
+	.section-subscribe {
+		input {
+			color: @color1;
+			border-color: @color2;
+
+			&[type=submit] {
+				color: @text-color;
+				background-color: @color2;
+
+				&:hover {
+					background-color: @color1;
+				}
+			}
+		}
+		.subscribe-desc {
+			color: @color2;
+		}
+		.widget_wysija_cont .updated,
+		.widget_wysija_cont .login .message {
+			border-color: 5px solid @color1;
+			color: @color1;
+
+			a{
+				color: @color1;
+			}
+		}
+		.widget_wysija_cont .error,
+		.widget_wysija_cont .xdetailed-errors {
+			border-color: @color2;
+			a {
+				color: @color2;
+			}
+		}
+	}
+	// Section Events
+	.section-events {
+		.tabs {
+			border-color: @color2;
+		}
+		.status a {
+			background: @color1;
+		}
+		.status {
+			a {
+				background-color: @color1;
+
+				&:hover {
+					background-color: @color2;
+				}
+			}
+		}
+		.content-infor-event {
+			background-color: @color1;
+		}
+		.infor-event {
+			color: @color2;
+			background-color: transparent;
+		}
+		.infor-event,
+		.open-gallery,
+		.open-videos {
+			&:hover {
+				color: @color1;
+			}
+		}
+		.event-gallery,
+		.event-videos {
+			color: @color2;
+		}
+		@media only screen and (max-width: 799px) {
+			.status a,
+			.infor-event {
+				color: @color1;
+				background-color: transparent;
+
+				&:hover {
+					color: @color2;
+					background-color: transparent;
+				}
+			}
+			.infor-event {
+				color: @color2;
+			}
+		}
+	}
+	// Section Countdown
+	.counter {
+		background-color: @color1;
+	}
+
+	// Section Artists
+	.artists-slider {
+		.artist {
+			h3 {
+				color: @color1;
+			}
+			.artist-thumbnail {
+				border-color: @color2;
+				background-color: @color2;
+			}
+			.artist-info {
+				border-color: @color2;
+			}
+			.quick-facts {
+				color: @color2;
+
+				span span {
+					color: @color1;
+				}
+			}
+			.info-title {
+				color: @color1;
+			}
+		}
+		.artist-socials {
+			background-color: @color2;
+		}
+		.view-artist-gallery {
+			background-color: @color2;
+
+			&:before {
+				background-color: @color2;
+			}
+			&:hover {
+				background-color: @color1;
+			}
+		}
+		.hide-detail {
+			background-color: @color2;
+
+			&:hover {
+				background-color: @color1;
+			}
+		}
+		.artist-direction-bar {
+			background-color: @color2;
+		}
+		.artist-direction-nav {
+			a {
+				&.disable,
+				&.disable:hover {
+					color: @border-box;
+				}
+				&:hover {
+					color: @color1;
+				}
+			}
+		}
+		&.item-expanded,
+		&.artist-single  {
+			.artist h3 {
+				color: @text-color;
+				background-color: @color1;
+			}
+		}
+		@media only screen and (max-width: 590px) {
+			.artist-direction-nav {
+				a {
+					background-color: @color2;
+
+					&:hover {
+						color: @text-color;
+						background-color: @color1;
+					}
+					&.disable {
+						color: lighten(@color2, 10%);
+					}
+					&.disable:hover {
+						color: lighten(@color2, 10%);
+						background-color: @color2;
+					}
+				}
+			}
+		}
+	}
+	// Section Blog
+	.section-blog {
+		.blog-link a {
+			color: @color1;
+		}
+	}
+	// Section Latest News
+	.section-latest-news {
+		article {
+			.entry-title a {
+				color: @color1;
+
+				&:hover {
+					color: @color2;
+				}
+			}
+		}
+	}
+	// Section Connect
+	.section-connect {
+		.social {
+			a {
+				background-color: @color2;
+
+				&:hover {
+					color: @color1;
+					background-color: @text-color;
+				}
+			}
+		}
+		.contact-form {
+			.box a:hover {
+				color: @color1;
+			}
+		}
+		.contact-info-window {
+			color: @color2;
+
+			a {
+				color: @color2;
+
+				&:hover {
+					color: @color1;
+				}
+			}
+		}
+		.toggle-contact-form {
+			background-color: @color2;
+
+			&:hover {
+				background-color: @color1;
+			}
+		}
+	}
+	// Blog
+	.content,
+	.sidebar {
+		a {
+			color: @color1;
+		}
+	}
+	.minimize-sidebar {
+		background-color: @color2;
+		&:hover {
+			background-color: @color1;
+		}
+	}
+	&.archive .content article,
+	&.page-template-template-blog-php .content article {
+		&:hover {
+			.entry-title,
+			.entry-title a {
+				color: @color1;
+			}
+		}
+	}
+	.entry-thumbnail {
+		.entry-link {
+			color: @text-color;
+			background-color: @color2;
+			&:hover {
+				background-color: @color1;
+			}
+		}
+		.entry-quote {
+			.quote {
+				&:before,
+				&:after {
+					color: @color2;
+				}
+			}
+			.quote-author {
+				color: @color1;
+			}
+		}
+		.flexslider {
+			background-color: @color2;
+		}
+		.mejs-controls {
+			background-color: @color1;
+			& > div {
+				border-color: darken(@color1, 10%);
+			}
+		}
+		.format-audio & {
+			background-color: @color2;
+		}
+		.format-audio-spectrum & {
+			.mejs-controls {
+				> div {
+					border-color: darken(@color1,15%);
+				}
+				.mejs-horizontal-volume-total,
+				.mejs-time-total {
+					background-color: @color2;
+				}
+			}
+		}
+	}
+	.entry-title {
+		color: @color2;
+		a {
+			color: @color2;
+		}
+	}
+	.entry-meta {
+		color: @color2;
+
+		span {
+			span,
+			a {
+				color: @color1;
+
+				&:hover {
+					color: @color2;
+				}
+			}
+		}
+	}
+	.read-more,
+	.entry-content .more-link {
+		color: @color1;
+
+		&:hover {
+			color: @color2;
+		}
+	}
+	.entry-info {
+		.entry-format,
+		.entry-date {
+			background-color: @color2;
+		}
+		.entry-format {
+			background-color: @color1;
+		}
+		.tags-links {
+			color: @color2;
+			a {
+				color: @color2;
+				&:hover {
+					color: @color1;
+				}
+			}
+		}
+	}
+	.edit-link a:hover {
+		color: @color2;
+	}
+	.pagination {
+		background-color: @color2;
+
+		a {
+			color: @text-color;
+			background-color: @color2;
+
+			&:hover,
+			&.loading {
+				background-color: @color1;
+			}
+		}
+	}
+	.simple-navigation {
+		a:hover {
+			color: @color1;
+		}
+	}
+	.numberic-navigation {
+		a,
+		span {
+			background-color: @color2;
+		}
+		a:hover,
+		span {
+			background-color: @color1;
+		}
+	}
+	.navigation {
+		a {
+			color: @color2;
+
+			&:hover {
+				color: @color1;
+			}
+		}
+	}
+	.comments-pagination {
+		span {
+			color: @color2;
+		}
+		a {
+			color: @color1;
+
+			&:hover {
+				color: @color2;
+			}
+		}
+	}
+	.about-author-title,
+	.comments-title,
+	.comment-reply-title {
+		color: @color2;
+	}
+	.author-box {
+		.avatar {
+			border-color: @color2;
+
+			&:hover {
+				border-color: @color1;
+			}
+		}
+		.num-posts,
+		.display-name,
+		.author-role {
+			color: @color2;
+		}
+		.num-posts {
+			span {
+				color: @color1;
+			}
+		}
+		.author-role {
+			color: @color1;
+		}
+	}
+	.commentlist {
+		article {
+			&:hover {
+				.comment-author,
+				.comment-author a,
+				.comment-reply-link {
+					color: @color1;
+				}
+				.avatar {
+					border-color: @color1;
+				}
+			}
+		}
+		.avatar {
+			border-color: @color2;
+		}
+		.comment-author,
+		.comment-meta {
+			color: @color2;
+
+			cite a {
+				color: @color2;
+			}
+		}
+		.comment-meta a {
+			color: @color2;
+		}
+		.comment-reply-link {
+			color: @color2;
+		}
+	}
+	.comment-respond {
+		input[type=submit] {
+			background-color: @color2;
+
+			&:hover {
+				background-color: @color1;
+			}
+		}
+	}
+	// Widget
+	.widget {
+		a {
+			color: @color2;
+
+			&:hover {
+				color: @color1;
+			}
+		}
+		li {
+			color: @color2;
+		}
+	}
+	.widget-title {
+		color: @color2;
+	}
+	.widget .menu {
+		li a {
+			border-color: @color2;
+			&:hover {
+				color: @color1;
+				border-color: @color1;
+			}
+		}
+	}
+	.widget_tag_cloud a {
+		color: @text-color;
+		background-color: @color2;
+
+		&:hover {
+			color: @text-color;
+			background-color: @color1;
+		}
+	}
+	.widget_noise-tweets .tweet {
+		a {
+			color: @color1;
+
+			&:hover {
+				color: @color2;
+			}
+		}
+		i {
+			color: @color1;
+		}
+		time {
+			color: @color2;
+		}
+	}
+	.noise-recent-posts .title {
+		color: @color2;
+	}
+	.widget-tabs {
+		.tabs-nav {
+			a {
+				background-color: @color2;
+
+				&:hover {
+					color: @text-color;
+					background-color: @color1;
+				}
+				&.active {
+					background-color: @border-color;
+					color: @color1;
+				}
+			}
+		}
+		article {
+			.entry-author a:hover {
+				color: @color1;
+			}
+		}
+	}
+	.widget.widget_wysija {
+		.wysija-submit {
+			background-color: @color2;
+
+			&:hover {
+				background-color: @color1;
+			}
+		}
+	}
+	.widget_recent_comments a {
+		color: @color1;
+	}
+	.widget_calendar {
+		table {
+			color: @color2;
+		}
+		a {
+			color: @color1;
+
+			&:hover {
+				color: @color2;
+			}
+		}
+	}
+	.widget-featured-tracks {
+		.track {
+			color: @color2;
+		}
+		.track-image {
+			border-color: @color2;
+			background-color: @color2;
+		}
+		.track-title a {
+			color: @color1;
+		}
+		.track-vote .icon {
+			color: @color1;
+		}
+	}
+	.widget_search {
+		input[type=submit] {
+			background-color: transparent;
+		}
+	}
+	// Footer
+	.footer {
+		a {
+			color: @color1;
+
+			&.scroll-top {
+				background-color: @color2;
+				&:hover {
+					color: @text-color;
+					background-color: @color1;
+				}
+			}
+		}
+	}
+	.cart .single_add_to_cart_button {
+		background-color: @color2 !important;
+	}
+	.woocommerce-checkout .form-row .chosen-container {
+		color: @color2;
+		border: 6px solid @color2;
+	}
+	&.woocommerce,
+	&.woocommerce-page,
+	.woocommerce,
+	.woocommerce-page {
+		// a {
+		// 	color: @color2;
+
+		// 	&:hover {
+		// 		color: @color1;
+		// 	}
+		// }
+		#review_form #respond .form-submit input,
+		.return-to-shop .wc-backward  {
+			background: @color2;
+			&:hover {
+				background: @color1;
+			}
+		}
+		#content .entry-content {
+			.shipping_calculator .button,
+			.shop_table .actions .button,
+			.cart-collaterals .wc-proceed-to-checkout a.button.alt,
+			.woocommerce-shipping-calculator .button,
+			.actions .button {
+				background: @color2;
+				&:hover {
+					background: @color1;
+				}
+			}
+		}
+
+		#payment #place_order {
+			background: @color2;
+			&:hover {
+				background: @color1;
+			}
+		}
+		.sale-price,
+		.onsale-custom {
+			background-color: @color1;
+		}
+		ul.products {
+			li.product {
+				background-color: @color2;
+				border-color: @color2;
+			}
+		}
+		.attachment-shop_single,
+		.panel,
+		.shop_table .product-thumbnail,
+		.shop_table .cart-product-detail  {
+			border: 10px solid @color2;
+		}
+
+		.coupon input[type=text],
+		form.checkout .form-row input[type=text],
+		form.checkout .form-row .input-text,
+		form.checkout select {
+			border: 6px solid @color2;
+		}
+		.cart-collaterals .cart_totals table {
+			border: 5px solid @color2;
+		}
+		.shop_table .header-cart-table  span,
+		.shop_table .product-remove,
+		.shipping_calculator .button {
+			background-color: @color2;
+		}
+		.shop_table .product-remove:hover {
+			background: @color1;
+		}
+
+		.shop_table .actions .checkout-button {
+			background-color: @color1;
+		}
+		div.product, #content div.product {
+			.woocommerce-tabs ul.tabs li {
+				&.active {
+					background-color: @color2;
+				}
+				background-color: @color1;
+			}
+			.quantity,
+			#content .quantity {
+				.plus,
+				.minus {
+					background: @color2 !important;
+				}
+			}
+		}
+		.shop_table .cart-product-detail,
+		.shop_table .cart-product-detail .product-name,
+		.shop_table .cart-product-detail .product-name a,
+		.cart-collaterals .cart_totals table,
+		form .form-row,
+		form .form-row input[type=text],
+		form .form-row .input-text,
+		.coupon input[type=text] {
+			color: @color2;
+		}
+
+		.woocommerce-info a ,
+		#order_review a {
+			color: @color1;
+		}
+
+		#content nav.woocommerce-pagination,
+		nav.woocommerce-pagination {
+			ul li {
+				a {
+					background-color: @color1;
+				}
+
+				span.current {
+					background: @color2;
+				}
+			}
+		}
+	}
+}

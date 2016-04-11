@@ -1,0 +1,42 @@
+.section-blog {
+	padding: 200px 0;
+	text-align: center;
+	text-transform: uppercase;
+
+	.blog-message {
+		position: relative;
+		font-size: 90px;
+		line-height: 1;
+		p {
+			margin-bottom: 25px;
+		}
+		.odd:first-child{
+			font-weight: 700;
+		}
+
+		.even {
+			font-size: 50%;
+		}
+	}
+
+	.blog-link {
+		padding-top: 50px;
+
+		a {
+			.opacity(20);
+			.transition(all 0.5s ease-in);
+			.inline-block;
+			height: 50px;
+			min-width: 255px;
+			padding: 0 70px;
+			line-height: 50px;
+			color: @text-box-color;
+			font-size: 22px;
+			background: @text-color;
+
+			&:hover {
+				.opacity(100);
+			}
+		}
+	}
+}

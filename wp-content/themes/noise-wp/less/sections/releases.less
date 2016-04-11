@@ -1,0 +1,527 @@
+.releases-slider {
+	height: 450px;
+	padding: 10px;
+	background-color: @border-box;
+
+	.flex-viewport {
+		li {
+			position: relative;
+			display: block;
+			height: 430px;
+			overflow: hidden;
+			background-color: #dcdcdc;
+		}
+		.hentry {
+			display: none;
+		}
+	}
+
+	.album-share {
+		padding-top: 10px;
+		position: relative;
+		z-index: 10;
+		background-color: @border-box;
+	}
+
+	.hide-detail {
+		.transition(all 0.5s ease-in);
+		font-size: 20px;
+		text-align: center;
+		position: absolute;
+		right: -40px;
+		top: 0;
+		width: 40px;
+		height: 40px;
+		padding-top: 10px;
+		z-index: 10;
+		background-color: @border-box;
+		cursor: pointer;
+		display: none;
+
+		&:hover {
+			background-color: @text-box-color;
+		}
+	}
+
+	&.item-expanded {
+		.hide-detail,
+		.album-share-bar {
+			display: block;
+		}
+
+		.flex-direction-nav {
+			top: auto;
+			bottom: 13px;
+			right: 0;
+			width: auto;
+			height: auto;
+			z-index: 10;
+
+			li {
+				.inline-block;
+			}
+
+			a {
+				.inline-block;
+				color: @text-color;
+				font: 16px/1 Oswald, sans-serif;
+				text-transform: uppercase;
+				text-decoration: none;
+				position: static;
+				float: none;
+				width: auto;
+				height: 16px;
+				padding: 0 10px;
+				background-color: transparent;
+
+				&:before {
+					content: "";
+					padding: 0;
+				}
+
+				&:hover {
+					color: @text-box-color;
+					background-color: transparent;
+				}
+
+				&.flex-disabled {
+					color: #484848;
+				}
+			}
+
+			.flex-prev {
+				border-right: 2px solid @text-color;
+			}
+		}
+	}
+}
+
+.album-cover {
+	position: relative;
+	text-align: center;
+
+	&:hover {
+		.overlay {
+			.opacity(60);
+			display: block;
+		}
+
+		.view-detail {
+			left: 45%;
+		}
+
+		.play-album {
+			right: 45%;
+		}
+
+		.short-info {
+			bottom: 0;
+		}
+	}
+
+	img {
+		display: block;
+	}
+
+	.overlay {
+		.transition(opacity 0.5s);
+		.opacity(0);
+	}
+
+	.view-detail,
+	.play-album {
+		.transition(all 0.5s);
+		font-size: 40px;
+		color: @text-color;
+		position: absolute;
+		top: 40%;
+	}
+
+	.view-detail {
+		left: -50px;
+	}
+
+	.play-album {
+		font-size: 50px;
+		right: -50px;
+	}
+
+	.short-info {
+		.transition(all 0.5s);
+		color: @text-box-color;
+		font-size: 16px;
+		line-height: 40px;
+		text-transform: uppercase;
+		width: 100%;
+		position: absolute;
+		bottom: -40px;
+		background-color: @text-color;
+	}
+
+	.num-tracks,
+	.album-title {
+		padding: 0 20px;
+	}
+
+	.num-tracks span {
+		color: @border-box;
+	}
+}
+
+.album {
+	color: @border-box;
+	font-size: 15px;
+	text-transform: uppercase;
+	width: 100%;
+	height: 390px;
+	padding: 20px;
+	overflow: hidden;
+	clear: both;
+	background-color: #dcdcdc;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.album-info {
+		float: left;
+		width: 525px;
+
+		img {
+			display: block;
+		}
+	}
+
+	.info {
+		clear: both;
+		overflow: hidden;
+		padding: 20px 0 0 0;
+		margin: 0 0 20px 0;
+		line-height: 1;
+		border-bottom: 1px solid @line-color;
+
+		p {
+			margin: 0 0 20px 0;
+			float: left;
+			width: 50%;
+		}
+
+		.album-composer,
+		.album-genre {
+			text-align: right;
+		}
+
+		span {
+			padding-left: 10px;
+			color: @text-box-color;
+
+			&.label {
+				padding-left: 0;
+				color: @border-box;
+			}
+		}
+	}
+
+	.album-sources {
+		clear: both;
+		overflow: hidden;
+		height: 40px;
+		background-color: @border-box;
+
+		.button {
+			.transition(all 0.5s);
+			.inline-block;
+			color: @text-color;
+			font-size: 15px;
+			text-align: center;
+			line-height: 40px;
+			text-decoration: none;
+			text-transform: uppercase;
+			cursor: pointer;
+			overflow: hidden;
+			float: left;
+
+			i {
+				padding-right: 15px;
+			}
+		}
+
+		span.button {
+			cursor: default;
+			width: 100%;
+		}
+
+		a.button {
+			width: 0;
+
+			&:hover {
+				color: @text-box-color;
+				background-color: @text-color;
+			}
+		}
+
+		&:hover {
+			.button {
+				width: 25%;
+			}
+			span.button {
+				background-color: @text-box-color;
+			}
+		}
+	}
+
+	.album-tracks {
+		margin-left: 570px;
+
+		.label {
+			margin: 0 0 20px 0;
+			font-size: 15px;
+			line-height: 1;
+			color: @text-box-color;
+		}
+	}
+
+	.album-review {
+		font-family: Lato, sans-serif;
+		font-size: 16px;
+		color: @entry-color;
+		text-transform: none;
+		padding-bottom: 20px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid @line-color;
+		height: 90px;
+
+		.scroll-pane {
+			height: 75px;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	.tracklist {
+		.scroll-pane {
+			height: 165px;
+		}
+
+		ol {
+			list-style: decimal inside;
+			padding: 0;
+		}
+
+		li {
+			color: @entry-color;
+			font-size: 14px;
+			line-height: 20px;
+			height: auto;
+			display: list-item;
+			padding: 5px 0;
+			border-top: 1px solid #cbcbcb;
+
+			&:first-child {
+				padding-left: 3px;
+				border-top: none;
+			}
+			&.playing {
+				color: @border-box;
+
+				.track-name {
+					color: @text-box-color;
+				}
+			}
+		}
+
+		p {
+			.inline-block;
+			color: @border-box;
+		}
+
+		.track-name {
+			color: @border-box;
+			width: 210px;
+
+			.track-length {
+				color: @entry-color;
+				padding-left: 10px;
+			}
+		}
+
+		.actions {
+			width: 130px;
+
+			span {
+				.transition(all 0.5s ease-in);
+				margin: 0 5px;
+				cursor: pointer;
+				font-size: 20px;
+
+				&:hover {
+					color: @text-box-color;
+				}
+			}
+			a {
+				color: @border-box;
+				&:hover {
+					color: @text-box-color;
+				}
+			}
+		}
+
+		.vote-score {
+			float: right;
+
+			span {
+				color: @text-box-color;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.sharrre {
+	.inline-block;
+	margin-right: 10px;
+	font-family: Oswald, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	color: @border-box;
+	cursor: pointer;
+
+	span {
+		.inline-block;
+		height: 30px;
+		line-height: 30px;
+	}
+	.share {
+		width: 30px;
+		float: left;
+
+		&:before {
+			font-family: 'Entypo';
+			color: @text-color;
+			line-height: 30px;
+			font-size: 16px;
+		}
+	}
+	.count {
+		min-width: 40px;
+		padding: 0 10px;
+		background-color: #dcdcdc;
+	}
+
+	&.facebook-share .share {
+		background-color: #4864a3;
+		&:before {
+			content: "\e6c2";
+		}
+	}
+
+	&.twitter-share .share {
+		background-color: #59c8ef;
+		&:before {
+			content: "\e6c0";
+		}
+	}
+
+	&.google-share .share {
+		background-color: #e24b3a;
+		&:before {
+			content: "\e718";
+		}
+	}
+}
+
+.scroll-pane {
+	width: 100%;
+	overflow: auto;
+}
+
+.mCSB_scrollTools {
+	position: absolute;
+	top: 0;
+	right: -5px;
+	height: 100%;
+	width: 20px;
+
+	a {
+		display: block;
+		width: 20px;
+		height: 20px;
+		color: @border-box;
+		cursor: pointer;
+		position: relative;
+
+		&:before {
+			.font-entypo();
+			font-size: 20px;
+			line-height: 1;
+		}
+		&:hover {
+			color: @text-box-color;
+		}
+	}
+
+	.mCSB_buttonUp:before {
+		content: "\e6a7";
+	}
+
+	.mCSB_buttonDown:before {
+		content: "\e6a6";
+	}
+
+	.mCSB_buttonDown {
+		top: 100%;
+		margin-top: -40px;
+	}
+
+	.mCSB_draggerContainer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: 20px 0;
+
+		.mCSB_dragger {
+			cursor: pointer;
+			width: 100%;
+		}
+
+		.mCSB_draggerRail {
+			height: 100%;
+		}
+	}
+}
+
+.mCSB_container {
+	margin-right: 20px;
+}
+
+.top-scroll-bar.scroll-pane {
+	.mCSB_container {
+		margin-right: 0;
+	}
+
+	.mCSB_scrollTools {
+		visibility: hidden;
+	}
+}
+
+.custom-scroll-nav {
+	float: right;
+	position: relative;
+	margin: -40px -5px 0 0;
+	font-size: 20px;
+
+	span {
+		.transition(all 0.5s ease-in);
+		color: @border-box;
+		cursor: pointer;
+
+		&:hover {
+			color: @text-box-color;
+		}
+	}
+}

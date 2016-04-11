@@ -1,0 +1,90 @@
+.section-countdown {
+	min-height: 600px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 150px 0;
+	overflow: hidden;
+
+	.counting-event {
+		background: rgba(0, 0, 0, 0.2);
+		padding: 45px 0 60px;
+		position: relative;
+		z-index: 10;
+	}
+	.event-title {
+		font-size: 45px;
+		font-weight: 400;
+	}
+	.event-desc {
+		font-size: 30px;
+		font-weight: 300;
+	}
+	#countdown-video-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: 0;
+	}
+	#countdown-youtube-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	&.video {
+		.section-mark {
+			background-image: none;
+		}
+		.parallax {
+			z-index: -1;
+		}
+	}
+}
+
+/* ---- Counter ---- */
+.countdown-wrap {
+	position: relative;
+	margin-top: -37px;
+
+	span {
+		.inline-block;
+	}
+}
+.countdown {
+	font-size: 40px;
+	line-height: 70px;
+	color: @text-color;
+	text-align: center;
+	font-weight: 400;
+	width: 100%;
+}
+.counter {
+	width: 70px;
+	height: 70px;
+	background-color: @text-box-color;
+}
+.sep-counter {
+	width: 10px;
+}
+.countdown-labels {
+	display: block;
+
+	span {
+		.inline-block;
+		height: 30px;
+		width: 70px;
+		margin-left: 7px;
+		line-height: 1;
+		font-size: 18px;
+		padding-top: 15px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
