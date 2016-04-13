@@ -1,15 +1,23 @@
 // Load plugins
 var gulp = require('gulp'),
-	plugins = require('gulp-load-plugins')({ camelize: true }),
-  less = require('gulp-less'),
-	lr = require('tiny-lr'),
-	server = lr();
+    plugins = require('gulp-load-plugins')({ camelize: true }),
+    dependencies = require('gulp-dependencies'),
+    lr = require('tiny-lr'),
+    less = require('gulp-less'),
+    path = require('path'),
+    concat = require('gulp-concat'),
+    livereload = require('gulp-livereload'),
+    server = lr();
 
-// Styles
+// Less
 gulp.task('less', function() {
-  return gulp.src('wp-content/themes/noise-wp/less/*.less')
-	.pipe(gulp.dest('wp-content/themes/noise-wp/style.css'))
-	.pipe(plugins.livereload(server))
+  return gulp.src('wp-content/themes/noise-wp/less/style.less')
+  .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+  .pipe(concat('style.css'))
+	.pipe(gulp.dest('wp-content/themes/noise-wp/'))
+	.pipe(livereload())
 });
 
 // Watch
@@ -21,8 +29,11 @@ gulp.task('watch', function() {
 	  return console.log(err)
 	};
 
-	// Watch .scss files
-	gulp.watch('wp-content/themes/noise-wp/less/*.less', ['less']);
+  .pipe(livereload())
+
+	// Watch .less files
+  gulp.watch('wp-content/themes/noise-wp/less/style.less', [ 'less' ]);
+	// gulp.watch('wp-content/themes/noise-wp/less/sections/*.less');
 
   });
 
