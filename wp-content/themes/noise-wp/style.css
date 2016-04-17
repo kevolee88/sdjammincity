@@ -4571,12 +4571,10 @@ body.sticky-nav .player-icon {
   margin-left: 15px;
 }
 .section-events .infor-event {
-  font-size: 56px;
+  font-size: 20px;
   background: none;
-  width: 25px;
-  line-height: 70px;
-  color: #383838;
   cursor: pointer;
+  color: #383838;
 }
 .section-events .open-videos:before {
   line-height: 35px;
@@ -17769,4 +17767,47 @@ MEDIA QUERIES
 .sapphire .woocommerce nav.woocommerce-pagination ul li span.current,
 .sapphire .woocommerce-page nav.woocommerce-pagination ul li span.current {
   background: #383838;
+}
+/* ==========================================================================
+    custom styles for custom sections
+   ========================================================================== */
+.dj-img {
+  width: 32%;
+  float: left;
+  border: 10px solid #383838;
+}
+@media (max-width: 780px) {
+  .dj-img {
+    width: 100%;
+    float: none;
+  }
+}
+.dj-img img {
+  width: 100%;
+  height: auto;
+}
+.dj-bio {
+  width: 66%;
+  padding: 10px 0;
+  margin: 1% 0 1% 2%;
+  float: left;
+}
+@media (max-width: 780px) {
+  .dj-bio {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: none;
+  }
+}
+@media (max-width: 780px) {
+  .dj-bio .section-title {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 780px) {
+  .dj-bio .section-title .desc {
+    position: relative;
+    margin: 0;
+  }
 }

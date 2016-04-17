@@ -15,25 +15,20 @@ gulp.task('less', function() {
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
   .pipe(concat('style.css'))
-	.pipe(gulp.dest('wp-content/themes/noise-wp/'))
+    .pipe(gulp.dest('wp-content/themes/noise-wp/'))
 });
 
 // Watch
-gulp.task('watch', function() {
+gulp.task('default', function() {
 
   // Listen on port 35729
   server.listen(35729, function (err) {
-	if (err) {
-	  return console.log(err)
-	};
-
-	// Watch .less files
-  gulp.watch('wp-content/themes/noise-wp/less/style.less', [ 'less' ]);
-	// gulp.watch('wp-content/themes/noise-wp/less/sections/*.less');
-
+    if (err) {
+      return console.log(err)
+    };
   });
 
-});
+  // Watch .less files
+  gulp.watch('wp-content/themes/noise-wp/less/*.less', [ 'less' ]);
 
-// Default task
-gulp.task('default', ['less', 'watch']);
+});

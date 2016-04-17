@@ -85,11 +85,10 @@ $past_event = new WP_Query( array(
 											<div class="place-event group-event">%s</div>
 											<div class="name-event group-event">%s</div>
 											<div class="group-status group-event">
-												<div class="infor-event">%s</div>
+												<div class="infor-event">More Info%s</div>
 												<div class="hidden infor-content-event">%s</div>
 												%s
 												%s
-												<div class="status">%s</div>
 											</div>',
 											date_i18n( 'd', $datetime ),
 											date_i18n( 'F, Y', $datetime ),
