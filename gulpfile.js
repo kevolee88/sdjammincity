@@ -6,7 +6,6 @@ var gulp = require('gulp'),
     less = require('gulp-less'),
     path = require('path'),
     concat = require('gulp-concat'),
-    livereload = require('gulp-livereload'),
     server = lr();
 
 // Less
@@ -17,7 +16,6 @@ gulp.task('less', function() {
     }))
   .pipe(concat('style.css'))
 	.pipe(gulp.dest('wp-content/themes/noise-wp/'))
-	.pipe(livereload())
 });
 
 // Watch
@@ -28,8 +26,6 @@ gulp.task('watch', function() {
 	if (err) {
 	  return console.log(err)
 	};
-
-  .pipe(livereload())
 
 	// Watch .less files
   gulp.watch('wp-content/themes/noise-wp/less/style.less', [ 'less' ]);
